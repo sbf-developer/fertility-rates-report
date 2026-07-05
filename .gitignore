@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.env
+.venv/
+venv/
+
+# LaTeX build artifacts (regenerate with pdflatex + bibtex)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.lof
+paper/*.lot
+paper/*.blg
+paper/*.bbl
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.synctex.gz

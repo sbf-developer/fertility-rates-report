@@ -1,0 +1,723 @@
+country_code,country_name,year,indicator_code,indicator_label,value
+GBR,United Kingdom,1990,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",32993.1694419805
+GBR,United Kingdom,1991,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",32466.1961615901
+GBR,United Kingdom,1992,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",32797.7299280942
+GBR,United Kingdom,1993,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",33861.2523742725
+GBR,United Kingdom,1994,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",35448.1781034952
+GBR,United Kingdom,1995,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",36603.7383816545
+GBR,United Kingdom,1996,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",37465.3771277415
+GBR,United Kingdom,1997,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",39192.610054674
+GBR,United Kingdom,1998,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",40347.1799533754
+GBR,United Kingdom,1999,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",41396.9358449656
+GBR,United Kingdom,2000,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",43115.5630082237
+GBR,United Kingdom,2001,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",43976.8391685783
+GBR,United Kingdom,2002,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",44539.4636492853
+GBR,United Kingdom,2003,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",45759.4020280715
+GBR,United Kingdom,2004,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",46558.1299600699
+GBR,United Kingdom,2005,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",47529.9377511933
+GBR,United Kingdom,2006,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",48215.0486668938
+GBR,United Kingdom,2007,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",49243.2517368789
+GBR,United Kingdom,2008,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",48833.0712359377
+GBR,United Kingdom,2009,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",46241.8039957358
+GBR,United Kingdom,2010,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",46917.8912974837
+GBR,United Kingdom,2011,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",46949.0207981339
+GBR,United Kingdom,2012,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",47328.2100308702
+GBR,United Kingdom,2013,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",47820.2821627006
+GBR,United Kingdom,2014,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",48964.2863514962
+GBR,United Kingdom,2015,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",49652.7188154397
+GBR,United Kingdom,2016,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",50346.8592925717
+GBR,United Kingdom,2017,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",51586.6756125445
+GBR,United Kingdom,2018,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",52131.6948248133
+GBR,United Kingdom,2019,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",52515.684446109
+GBR,United Kingdom,2020,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",47158.985486323
+GBR,United Kingdom,2021,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",51004.4271714238
+GBR,United Kingdom,2022,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",53139.151252206
+GBR,United Kingdom,2023,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",52592.6822066393
+GBR,United Kingdom,2009,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",82.6486892700195
+GBR,United Kingdom,2010,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",84.5431976318359
+GBR,United Kingdom,2011,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",84.5514373779297
+GBR,United Kingdom,2012,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",86.4146499633789
+GBR,United Kingdom,2013,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",72.0295104980469
+GBR,United Kingdom,2014,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",73.2993927001953
+GBR,United Kingdom,2017,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",76.6732788085938
+GBR,United Kingdom,2020,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",80.0719985961914
+GBR,United Kingdom,2021,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",81.1361389160156
+GBR,United Kingdom,2000,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",62.2376289367676
+GBR,United Kingdom,2001,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",63.1506118774414
+GBR,United Kingdom,2002,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",68.1336517333984
+GBR,United Kingdom,2003,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",69.4760284423828
+GBR,United Kingdom,2004,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",68.7480926513672
+GBR,United Kingdom,2005,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",68.6411819458008
+GBR,United Kingdom,2006,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",68.4566268920898
+GBR,United Kingdom,2007,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",67.8921585083008
+GBR,United Kingdom,2008,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",66.1612319946289
+GBR,United Kingdom,2009,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",67.7098388671875
+GBR,United Kingdom,2010,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",68.3259124755859
+GBR,United Kingdom,2011,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",67.8691024780273
+GBR,United Kingdom,2012,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",67.6730575561523
+GBR,United Kingdom,2013,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",64.6671829223633
+GBR,United Kingdom,2014,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",64.223747253418
+GBR,United Kingdom,2015,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",64.4248275756836
+GBR,United Kingdom,2016,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",66.6012115478516
+GBR,United Kingdom,2017,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",68.6442718505859
+GBR,United Kingdom,2018,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",70.4450607299805
+GBR,United Kingdom,2019,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",75.4132614135742
+GBR,United Kingdom,2020,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",79.5263595581055
+GBR,United Kingdom,2021,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",88.3975524902344
+GBR,United Kingdom,2022,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",92.4416198730469
+GBR,United Kingdom,2023,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",93.4978408813477
+GBR,United Kingdom,2000,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),2020.96813965
+GBR,United Kingdom,2001,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),2074.59936523
+GBR,United Kingdom,2002,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),2364.04736328
+GBR,United Kingdom,2003,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),2773.99414063
+GBR,United Kingdom,2004,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),3361.65625
+GBR,United Kingdom,2005,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),3528.16162109
+GBR,United Kingdom,2006,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),3802.56347656
+GBR,United Kingdom,2007,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4415.51220703
+GBR,United Kingdom,2008,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4280.36083984
+GBR,United Kingdom,2009,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),3813.02758789
+GBR,United Kingdom,2010,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),3876.33911133
+GBR,United Kingdom,2011,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4123.70019531
+GBR,United Kingdom,2012,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4204.08300781
+GBR,United Kingdom,2013,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4340.16992188
+GBR,United Kingdom,2014,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4733.37060547
+GBR,United Kingdom,2015,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4470.09228516
+GBR,United Kingdom,2016,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4043.35253906
+GBR,United Kingdom,2017,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),3938.65234375
+GBR,United Kingdom,2018,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4233.62988281
+GBR,United Kingdom,2019,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4260.03222656
+GBR,United Kingdom,2020,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4865.97802734
+GBR,United Kingdom,2021,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),5645.40136719
+GBR,United Kingdom,2022,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),5111.81738281
+GBR,United Kingdom,2023,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),5407.17041016
+GBR,United Kingdom,1968,SI.POV.GINI,Gini index (0 = perfect equality),26.8
+GBR,United Kingdom,1969,SI.POV.GINI,Gini index (0 = perfect equality),27.9
+GBR,United Kingdom,1970,SI.POV.GINI,Gini index (0 = perfect equality),28.0
+GBR,United Kingdom,1971,SI.POV.GINI,Gini index (0 = perfect equality),29.3
+GBR,United Kingdom,1972,SI.POV.GINI,Gini index (0 = perfect equality),28.8
+GBR,United Kingdom,1973,SI.POV.GINI,Gini index (0 = perfect equality),28.8
+GBR,United Kingdom,1974,SI.POV.GINI,Gini index (0 = perfect equality),29.0
+GBR,United Kingdom,1975,SI.POV.GINI,Gini index (0 = perfect equality),27.9
+GBR,United Kingdom,1976,SI.POV.GINI,Gini index (0 = perfect equality),27.6
+GBR,United Kingdom,1977,SI.POV.GINI,Gini index (0 = perfect equality),27.1
+GBR,United Kingdom,1978,SI.POV.GINI,Gini index (0 = perfect equality),27.2
+GBR,United Kingdom,1979,SI.POV.GINI,Gini index (0 = perfect equality),27.4
+GBR,United Kingdom,1980,SI.POV.GINI,Gini index (0 = perfect equality),28.5
+GBR,United Kingdom,1981,SI.POV.GINI,Gini index (0 = perfect equality),29.7
+GBR,United Kingdom,1982,SI.POV.GINI,Gini index (0 = perfect equality),29.9
+GBR,United Kingdom,1983,SI.POV.GINI,Gini index (0 = perfect equality),29.8
+GBR,United Kingdom,1984,SI.POV.GINI,Gini index (0 = perfect equality),29.2
+GBR,United Kingdom,1985,SI.POV.GINI,Gini index (0 = perfect equality),30.4
+GBR,United Kingdom,1986,SI.POV.GINI,Gini index (0 = perfect equality),31.9
+GBR,United Kingdom,1987,SI.POV.GINI,Gini index (0 = perfect equality),33.9
+GBR,United Kingdom,1988,SI.POV.GINI,Gini index (0 = perfect equality),34.3
+GBR,United Kingdom,1989,SI.POV.GINI,Gini index (0 = perfect equality),33.4
+GBR,United Kingdom,1990,SI.POV.GINI,Gini index (0 = perfect equality),35.7
+GBR,United Kingdom,1991,SI.POV.GINI,Gini index (0 = perfect equality),35.0
+GBR,United Kingdom,1992,SI.POV.GINI,Gini index (0 = perfect equality),35.0
+GBR,United Kingdom,1993,SI.POV.GINI,Gini index (0 = perfect equality),35.1
+GBR,United Kingdom,1994,SI.POV.GINI,Gini index (0 = perfect equality),36.0
+GBR,United Kingdom,1995,SI.POV.GINI,Gini index (0 = perfect equality),35.5
+GBR,United Kingdom,1996,SI.POV.GINI,Gini index (0 = perfect equality),35.3
+GBR,United Kingdom,1997,SI.POV.GINI,Gini index (0 = perfect equality),35.7
+GBR,United Kingdom,1998,SI.POV.GINI,Gini index (0 = perfect equality),36.6
+GBR,United Kingdom,1999,SI.POV.GINI,Gini index (0 = perfect equality),36.8
+GBR,United Kingdom,2000,SI.POV.GINI,Gini index (0 = perfect equality),38.9
+GBR,United Kingdom,2001,SI.POV.GINI,Gini index (0 = perfect equality),37.1
+GBR,United Kingdom,2002,SI.POV.GINI,Gini index (0 = perfect equality),35.1
+GBR,United Kingdom,2003,SI.POV.GINI,Gini index (0 = perfect equality),34.9
+GBR,United Kingdom,2004,SI.POV.GINI,Gini index (0 = perfect equality),34.8
+GBR,United Kingdom,2005,SI.POV.GINI,Gini index (0 = perfect equality),35.5
+GBR,United Kingdom,2006,SI.POV.GINI,Gini index (0 = perfect equality),35.9
+GBR,United Kingdom,2007,SI.POV.GINI,Gini index (0 = perfect equality),34.4
+GBR,United Kingdom,2008,SI.POV.GINI,Gini index (0 = perfect equality),35.4
+GBR,United Kingdom,2009,SI.POV.GINI,Gini index (0 = perfect equality),35.1
+GBR,United Kingdom,2010,SI.POV.GINI,Gini index (0 = perfect equality),33.7
+GBR,United Kingdom,2011,SI.POV.GINI,Gini index (0 = perfect equality),33.2
+GBR,United Kingdom,2012,SI.POV.GINI,Gini index (0 = perfect equality),33.1
+GBR,United Kingdom,2013,SI.POV.GINI,Gini index (0 = perfect equality),32.7
+GBR,United Kingdom,2014,SI.POV.GINI,Gini index (0 = perfect equality),33.1
+GBR,United Kingdom,2015,SI.POV.GINI,Gini index (0 = perfect equality),33.3
+GBR,United Kingdom,2016,SI.POV.GINI,Gini index (0 = perfect equality),33.1
+GBR,United Kingdom,2017,SI.POV.GINI,Gini index (0 = perfect equality),32.6
+GBR,United Kingdom,2018,SI.POV.GINI,Gini index (0 = perfect equality),33.7
+GBR,United Kingdom,2019,SI.POV.GINI,Gini index (0 = perfect equality),32.8
+GBR,United Kingdom,2020,SI.POV.GINI,Gini index (0 = perfect equality),32.7
+GBR,United Kingdom,2021,SI.POV.GINI,Gini index (0 = perfect equality),32.4
+GBR,United Kingdom,1990,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",52.005
+GBR,United Kingdom,1991,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",51.844
+GBR,United Kingdom,1992,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",51.828
+GBR,United Kingdom,1993,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",51.896
+GBR,United Kingdom,1994,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",51.904
+GBR,United Kingdom,1995,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",51.86
+GBR,United Kingdom,1996,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",52.276
+GBR,United Kingdom,1997,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",52.676
+GBR,United Kingdom,1998,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",52.717
+GBR,United Kingdom,1999,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",53.261
+GBR,United Kingdom,2000,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",53.66
+GBR,United Kingdom,2001,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",53.533
+GBR,United Kingdom,2002,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",54.146
+GBR,United Kingdom,2003,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",54.111
+GBR,United Kingdom,2004,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",54.534
+GBR,United Kingdom,2005,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",54.864
+GBR,United Kingdom,2006,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.378
+GBR,United Kingdom,2007,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.146
+GBR,United Kingdom,2008,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.449
+GBR,United Kingdom,2009,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.604
+GBR,United Kingdom,2010,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.529
+GBR,United Kingdom,2011,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.67
+GBR,United Kingdom,2012,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.929
+GBR,United Kingdom,2013,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.256
+GBR,United Kingdom,2014,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.521
+GBR,United Kingdom,2015,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.722
+GBR,United Kingdom,2016,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.074
+GBR,United Kingdom,2017,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.273
+GBR,United Kingdom,2018,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.525
+GBR,United Kingdom,2019,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.037
+GBR,United Kingdom,2020,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.277
+GBR,United Kingdom,2021,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.02
+GBR,United Kingdom,2022,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.703
+GBR,United Kingdom,2023,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.38
+GBR,United Kingdom,1991,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.55
+GBR,United Kingdom,1992,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",9.772
+GBR,United Kingdom,1993,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",10.346
+GBR,United Kingdom,1994,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",9.648
+GBR,United Kingdom,1995,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.694
+GBR,United Kingdom,1996,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.189
+GBR,United Kingdom,1997,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",7.072
+GBR,United Kingdom,1998,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",6.198
+GBR,United Kingdom,1999,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",6.042
+GBR,United Kingdom,2000,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.558
+GBR,United Kingdom,2001,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.696
+GBR,United Kingdom,2002,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.037
+GBR,United Kingdom,2003,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.807
+GBR,United Kingdom,2004,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.594
+GBR,United Kingdom,2005,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.884
+GBR,United Kingdom,2006,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.472
+GBR,United Kingdom,2007,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.399
+GBR,United Kingdom,2008,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.748
+GBR,United Kingdom,2009,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",7.683
+GBR,United Kingdom,2010,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",7.973
+GBR,United Kingdom,2011,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.195
+GBR,United Kingdom,2012,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.279
+GBR,United Kingdom,2013,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",7.752
+GBR,United Kingdom,2014,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",6.398
+GBR,United Kingdom,2015,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.552
+GBR,United Kingdom,2016,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.909
+GBR,United Kingdom,2017,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.501
+GBR,United Kingdom,2018,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.145
+GBR,United Kingdom,2019,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",3.657
+GBR,United Kingdom,2020,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.472
+GBR,United Kingdom,2021,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.864
+GBR,United Kingdom,2022,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",3.768
+GBR,United Kingdom,2023,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.025
+GBR,United Kingdom,1960,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.69
+GBR,United Kingdom,1961,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.78
+GBR,United Kingdom,1962,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.86
+GBR,United Kingdom,1963,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.88
+GBR,United Kingdom,1964,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.93
+GBR,United Kingdom,1965,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.86
+GBR,United Kingdom,1966,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.78
+GBR,United Kingdom,1967,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.68
+GBR,United Kingdom,1968,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.6
+GBR,United Kingdom,1969,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.51
+GBR,United Kingdom,1970,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.44
+GBR,United Kingdom,1971,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.41
+GBR,United Kingdom,1972,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.2
+GBR,United Kingdom,1973,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.04
+GBR,United Kingdom,1974,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.92
+GBR,United Kingdom,1975,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.81
+GBR,United Kingdom,1976,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.74
+GBR,United Kingdom,1977,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.69
+GBR,United Kingdom,1978,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.75
+GBR,United Kingdom,1979,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.86
+GBR,United Kingdom,1980,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.9
+GBR,United Kingdom,1981,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.82
+GBR,United Kingdom,1982,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.78
+GBR,United Kingdom,1983,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.77
+GBR,United Kingdom,1984,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.77
+GBR,United Kingdom,1985,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.79
+GBR,United Kingdom,1986,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.78
+GBR,United Kingdom,1987,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.81
+GBR,United Kingdom,1988,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.82
+GBR,United Kingdom,1989,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.79
+GBR,United Kingdom,1990,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.83
+GBR,United Kingdom,1991,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.82
+GBR,United Kingdom,1992,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.79
+GBR,United Kingdom,1993,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.76
+GBR,United Kingdom,1994,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.74
+GBR,United Kingdom,1995,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.71
+GBR,United Kingdom,1996,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.73
+GBR,United Kingdom,1997,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.72
+GBR,United Kingdom,1998,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.71
+GBR,United Kingdom,1999,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.68
+GBR,United Kingdom,2000,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.64
+GBR,United Kingdom,2001,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.63
+GBR,United Kingdom,2002,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.63
+GBR,United Kingdom,2003,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.7
+GBR,United Kingdom,2004,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.75
+GBR,United Kingdom,2005,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.76
+GBR,United Kingdom,2006,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.82
+GBR,United Kingdom,2007,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.86
+GBR,United Kingdom,2008,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.91
+GBR,United Kingdom,2009,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.89
+GBR,United Kingdom,2010,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.92
+GBR,United Kingdom,2011,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.91
+GBR,United Kingdom,2012,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.92
+GBR,United Kingdom,2013,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.83
+GBR,United Kingdom,2014,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.81
+GBR,United Kingdom,2015,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8
+GBR,United Kingdom,2016,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.79
+GBR,United Kingdom,2017,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.74
+GBR,United Kingdom,2018,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.68
+GBR,United Kingdom,2019,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.632
+GBR,United Kingdom,2020,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.571
+GBR,United Kingdom,2021,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.583
+GBR,United Kingdom,2022,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.56
+GBR,United Kingdom,2023,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.56
+GBR,United Kingdom,1960,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.5503107965497
+GBR,United Kingdom,1961,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.3663913939232
+GBR,United Kingdom,1962,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.1875107335425
+GBR,United Kingdom,1963,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.9930058788831
+GBR,United Kingdom,1964,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.792841598491
+GBR,United Kingdom,1965,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.5949669582873
+GBR,United Kingdom,1966,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.407331024193
+GBR,United Kingdom,1967,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.2378828621291
+GBR,United Kingdom,1968,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.0945715380164
+GBR,United Kingdom,1969,SP.URB.TOTL.IN.ZS,Urban population (% of total),76.9853461177761
+GBR,United Kingdom,1970,SP.URB.TOTL.IN.ZS,Urban population (% of total),76.9181556673291
+GBR,United Kingdom,1971,SP.URB.TOTL.IN.ZS,Urban population (% of total),76.9023108087531
+GBR,United Kingdom,1972,SP.URB.TOTL.IN.ZS,Urban population (% of total),76.9664092010843
+GBR,United Kingdom,1973,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.1097588679539
+GBR,United Kingdom,1974,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.3109917306611
+GBR,United Kingdom,1975,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.5493534649081
+GBR,United Kingdom,1976,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.8040897463968
+GBR,United Kingdom,1977,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.0544462508291
+GBR,United Kingdom,1978,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.279668653907
+GBR,United Kingdom,1979,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.4590026313326
+GBR,United Kingdom,1980,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.5716938588077
+GBR,United Kingdom,1981,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.5988698930662
+GBR,United Kingdom,1982,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.5790435793683
+GBR,United Kingdom,1983,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.5365448356556
+GBR,United Kingdom,1984,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.4775775496664
+GBR,United Kingdom,1985,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.4080567918043
+GBR,United Kingdom,1986,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.3338976324727
+GBR,United Kingdom,1987,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.2610151420751
+GBR,United Kingdom,1988,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.1953243910149
+GBR,United Kingdom,1989,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.1427404496957
+GBR,United Kingdom,1990,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.1091783885209
+GBR,United Kingdom,1991,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.1020654236402
+GBR,United Kingdom,1992,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.1549335902337
+GBR,United Kingdom,1993,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.2748023147801
+GBR,United Kingdom,1994,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.4474219748331
+GBR,United Kingdom,1995,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.6591002712985
+GBR,United Kingdom,1996,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.8961449050823
+GBR,United Kingdom,1997,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.1448635770901
+GBR,United Kingdom,1998,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.391563988228
+GBR,United Kingdom,1999,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.6225538394017
+GBR,United Kingdom,2000,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.8241408315172
+GBR,United Kingdom,2001,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.9838301298823
+GBR,United Kingdom,2002,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.1146062677742
+GBR,United Kingdom,2003,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.2331593332802
+GBR,United Kingdom,2004,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.3423284929998
+GBR,United Kingdom,2005,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.4455938127627
+GBR,United Kingdom,2006,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.5464353583991
+GBR,United Kingdom,2007,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.6483331957387
+GBR,United Kingdom,2008,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.7547673906116
+GBR,United Kingdom,2009,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.8692180088478
+GBR,United Kingdom,2010,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.995165116277
+GBR,United Kingdom,2011,SP.URB.TOTL.IN.ZS,Urban population (% of total),81.1359685592627
+GBR,United Kingdom,2012,SP.URB.TOTL.IN.ZS,Urban population (% of total),81.2905667759508
+GBR,United Kingdom,2013,SP.URB.TOTL.IN.ZS,Urban population (% of total),81.4573768694887
+GBR,United Kingdom,2014,SP.URB.TOTL.IN.ZS,Urban population (% of total),81.6355750750722
+GBR,United Kingdom,2015,SP.URB.TOTL.IN.ZS,Urban population (% of total),81.8243772295647
+GBR,United Kingdom,2016,SP.URB.TOTL.IN.ZS,Urban population (% of total),82.0229991698295
+GBR,United Kingdom,2017,SP.URB.TOTL.IN.ZS,Urban population (% of total),82.23065673273
+GBR,United Kingdom,2018,SP.URB.TOTL.IN.ZS,Urban population (% of total),82.4465657551295
+GBR,United Kingdom,2019,SP.URB.TOTL.IN.ZS,Urban population (% of total),82.6699420738913
+GBR,United Kingdom,2020,SP.URB.TOTL.IN.ZS,Urban population (% of total),82.9000015258789
+GBR,United Kingdom,2021,SP.URB.TOTL.IN.ZS,Urban population (% of total),82.9886431523641
+GBR,United Kingdom,2022,SP.URB.TOTL.IN.ZS,Urban population (% of total),83.0753982997505
+GBR,United Kingdom,2023,SP.URB.TOTL.IN.ZS,Urban population (% of total),83.1601932891335
+USA,United States,1990,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",44378.5240275575
+USA,United States,1991,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",43742.0261213549
+USA,United States,1992,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",44659.1514617994
+USA,United States,1993,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",45286.9355090342
+USA,United States,1994,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",46537.3571477424
+USA,United States,1995,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",47220.9579604358
+USA,United States,1996,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",48435.70010416
+USA,United States,1997,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",49984.2696497419
+USA,United States,1998,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",51619.8698375216
+USA,United States,1999,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",53474.045430104
+USA,United States,2000,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",55038.6224959451
+USA,United States,2001,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",55017.3049786608
+USA,United States,2002,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",55436.1169813778
+USA,United States,2003,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",56498.2078314911
+USA,United States,2004,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",58131.6336853496
+USA,United States,2005,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",59604.7536374577
+USA,United States,2006,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",60676.5655690664
+USA,United States,2007,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",61306.596938633
+USA,United States,2008,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",60798.4338401606
+USA,United States,2009,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",58714.9736915861
+USA,United States,2010,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",59789.4129069749
+USA,United States,2011,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",60245.4843994565
+USA,United States,2012,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",61134.530608776
+USA,United States,2013,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",61958.7234416953
+USA,United States,2014,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",63018.8033942192
+USA,United States,2015,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",64359.4725899466
+USA,United States,2016,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",65017.654963867
+USA,United States,2017,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",66155.5555676249
+USA,United States,2018,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",67719.7656392064
+USA,United States,2019,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",69112.602688656
+USA,United States,2020,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",67342.0709287722
+USA,United States,2021,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",71307.4017277218
+USA,United States,2022,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",72679.2575396348
+USA,United States,2023,NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2017 international $)",74158.7164155605
+USA,United States,1994,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",88.9700630376479
+USA,United States,1995,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",89.4073215105582
+USA,United States,1996,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",89.5705602452526
+USA,United States,1997,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",90.1214450718549
+USA,United States,1998,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",90.3684974111684
+USA,United States,1999,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",90.8252480900612
+USA,United States,2000,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",90.9064176079227
+USA,United States,2001,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",91.2186015385933
+USA,United States,2002,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",91.5402577482273
+USA,United States,2003,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",91.702321268806
+USA,United States,2004,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",86.3436126708984
+USA,United States,2005,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",85.4364624023438
+USA,United States,2006,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",86.40869140625
+USA,United States,2007,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",92.7727550009282
+USA,United States,2008,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",87.2264022827148
+USA,United States,2009,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",87.1326675415039
+USA,United States,2010,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",87.6601486206055
+USA,United States,2011,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",88.0463714599609
+USA,United States,2012,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",88.0367279052734
+USA,United States,2013,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",88.6239929199219
+USA,United States,2014,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",88.8588333129883
+USA,United States,2015,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",88.7589416503906
+USA,United States,2016,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",89.598388671875
+USA,United States,2017,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",90.2641983032227
+USA,United States,2018,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",90.1592025756836
+USA,United States,2019,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",94.7953141834262
+USA,United States,2020,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",91.3008499145508
+USA,United States,2021,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",91.8721466064453
+USA,United States,2022,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",91.7543563842773
+USA,United States,2023,SE.SEC.CUAT.UP.FE.ZS,"Educational attainment, upper secondary+, female (% ages 25+)",91.8989028930664
+USA,United States,1971,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",38.2219200134277
+USA,United States,1972,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",39.8508605957031
+USA,United States,1973,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",41.6190414428711
+USA,United States,1974,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",42.4778709411621
+USA,United States,1975,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",44.9599304199219
+USA,United States,1976,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",48.1971397399902
+USA,United States,1977,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",48.9269981384277
+USA,United States,1978,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",51.1973991394043
+USA,United States,1979,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",52.0334701538086
+USA,United States,1980,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",54.3490409851074
+USA,United States,1981,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",57.6029815673828
+USA,United States,1982,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",59.688419342041
+USA,United States,1983,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",60.1940803527832
+USA,United States,1984,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",61.8426513671875
+USA,United States,1985,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",62.9929809570312
+USA,United States,1986,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",65.4409103393555
+USA,United States,1987,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",69.4403762817383
+USA,United States,1988,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",73.4586486816406
+USA,United States,1989,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",76.2279205322266
+USA,United States,1990,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",79.9561386108398
+USA,United States,1991,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",81.9300765991211
+USA,United States,1993,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",89.5279083251953
+USA,United States,1994,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",90.6386413574219
+USA,United States,1995,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",92.2264022827148
+USA,United States,1996,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",91.3876724243164
+USA,United States,1998,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",81.886833190918
+USA,United States,1999,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",82.4623794555664
+USA,United States,2005,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",95.1901626586914
+USA,United States,2013,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",103.112609863281
+USA,United States,2014,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",102.599388122559
+USA,United States,2015,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",102.747329711914
+USA,United States,2016,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",102.293800354004
+USA,United States,2017,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",102.011329650879
+USA,United States,2018,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",102.354042053223
+USA,United States,2019,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",102.425331115723
+USA,United States,2020,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",102.956741333008
+USA,United States,2021,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",101.710220336914
+USA,United States,2022,SE.TER.ENRR.FE,"School enrollment, tertiary, female (% gross)",94.8502197265625
+USA,United States,2000,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4548.5546875
+USA,United States,2001,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),4901.67529297
+USA,United States,2002,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),5327.93701172
+USA,United States,2003,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),5732.24365234
+USA,United States,2004,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),6071.84423828
+USA,United States,2005,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),6428.60205078
+USA,United States,2006,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),6802.47509766
+USA,United States,2007,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),7153.73144531
+USA,United States,2008,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),7364.93847656
+USA,United States,2009,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),7614.82421875
+USA,United States,2010,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),7836.08837891
+USA,United States,2011,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),8015.78076172
+USA,United States,2012,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),8262.29296875
+USA,United States,2013,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),8412.25195313
+USA,United States,2014,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),8796.33886719
+USA,United States,2015,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),9200.93164063
+USA,United States,2016,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),9535.60058594
+USA,United States,2017,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),9822.60644531
+USA,United States,2018,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),10180.48242188
+USA,United States,2019,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),10550.22070313
+USA,United States,2020,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),11648.49511719
+USA,United States,2021,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),12080.07324219
+USA,United States,2022,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),12586.19628906
+USA,United States,2023,SH.XPD.CHEX.PC.CD,Current health expenditure per capita (current US$),13473.19335938
+USA,United States,1963,SI.POV.GINI,Gini index (0 = perfect equality),36.7
+USA,United States,1964,SI.POV.GINI,Gini index (0 = perfect equality),37.4
+USA,United States,1965,SI.POV.GINI,Gini index (0 = perfect equality),36.8
+USA,United States,1966,SI.POV.GINI,Gini index (0 = perfect equality),37.1
+USA,United States,1967,SI.POV.GINI,Gini index (0 = perfect equality),36.9
+USA,United States,1968,SI.POV.GINI,Gini index (0 = perfect equality),36.3
+USA,United States,1969,SI.POV.GINI,Gini index (0 = perfect equality),36.0
+USA,United States,1970,SI.POV.GINI,Gini index (0 = perfect equality),36.6
+USA,United States,1971,SI.POV.GINI,Gini index (0 = perfect equality),36.9
+USA,United States,1972,SI.POV.GINI,Gini index (0 = perfect equality),36.7
+USA,United States,1973,SI.POV.GINI,Gini index (0 = perfect equality),36.1
+USA,United States,1974,SI.POV.GINI,Gini index (0 = perfect equality),35.5
+USA,United States,1975,SI.POV.GINI,Gini index (0 = perfect equality),35.7
+USA,United States,1976,SI.POV.GINI,Gini index (0 = perfect equality),35.6
+USA,United States,1977,SI.POV.GINI,Gini index (0 = perfect equality),35.5
+USA,United States,1978,SI.POV.GINI,Gini index (0 = perfect equality),34.8
+USA,United States,1979,SI.POV.GINI,Gini index (0 = perfect equality),34.8
+USA,United States,1980,SI.POV.GINI,Gini index (0 = perfect equality),34.7
+USA,United States,1981,SI.POV.GINI,Gini index (0 = perfect equality),35.5
+USA,United States,1982,SI.POV.GINI,Gini index (0 = perfect equality),36.7
+USA,United States,1983,SI.POV.GINI,Gini index (0 = perfect equality),37.3
+USA,United States,1984,SI.POV.GINI,Gini index (0 = perfect equality),37.3
+USA,United States,1985,SI.POV.GINI,Gini index (0 = perfect equality),37.6
+USA,United States,1986,SI.POV.GINI,Gini index (0 = perfect equality),37.6
+USA,United States,1987,SI.POV.GINI,Gini index (0 = perfect equality),37.2
+USA,United States,1988,SI.POV.GINI,Gini index (0 = perfect equality),37.7
+USA,United States,1989,SI.POV.GINI,Gini index (0 = perfect equality),38.2
+USA,United States,1990,SI.POV.GINI,Gini index (0 = perfect equality),38.3
+USA,United States,1991,SI.POV.GINI,Gini index (0 = perfect equality),38.0
+USA,United States,1992,SI.POV.GINI,Gini index (0 = perfect equality),38.4
+USA,United States,1993,SI.POV.GINI,Gini index (0 = perfect equality),40.4
+USA,United States,1994,SI.POV.GINI,Gini index (0 = perfect equality),40.0
+USA,United States,1995,SI.POV.GINI,Gini index (0 = perfect equality),39.9
+USA,United States,1996,SI.POV.GINI,Gini index (0 = perfect equality),40.3
+USA,United States,1997,SI.POV.GINI,Gini index (0 = perfect equality),40.5
+USA,United States,1998,SI.POV.GINI,Gini index (0 = perfect equality),40.0
+USA,United States,1999,SI.POV.GINI,Gini index (0 = perfect equality),40.0
+USA,United States,2000,SI.POV.GINI,Gini index (0 = perfect equality),40.1
+USA,United States,2001,SI.POV.GINI,Gini index (0 = perfect equality),40.6
+USA,United States,2002,SI.POV.GINI,Gini index (0 = perfect equality),40.4
+USA,United States,2003,SI.POV.GINI,Gini index (0 = perfect equality),40.8
+USA,United States,2004,SI.POV.GINI,Gini index (0 = perfect equality),40.5
+USA,United States,2005,SI.POV.GINI,Gini index (0 = perfect equality),41.3
+USA,United States,2006,SI.POV.GINI,Gini index (0 = perfect equality),41.7
+USA,United States,2007,SI.POV.GINI,Gini index (0 = perfect equality),41.1
+USA,United States,2008,SI.POV.GINI,Gini index (0 = perfect equality),41.1
+USA,United States,2009,SI.POV.GINI,Gini index (0 = perfect equality),40.9
+USA,United States,2010,SI.POV.GINI,Gini index (0 = perfect equality),40.2
+USA,United States,2011,SI.POV.GINI,Gini index (0 = perfect equality),41.2
+USA,United States,2012,SI.POV.GINI,Gini index (0 = perfect equality),41.2
+USA,United States,2013,SI.POV.GINI,Gini index (0 = perfect equality),40.9
+USA,United States,2014,SI.POV.GINI,Gini index (0 = perfect equality),41.7
+USA,United States,2015,SI.POV.GINI,Gini index (0 = perfect equality),41.5
+USA,United States,2016,SI.POV.GINI,Gini index (0 = perfect equality),41.3
+USA,United States,2017,SI.POV.GINI,Gini index (0 = perfect equality),41.4
+USA,United States,2018,SI.POV.GINI,Gini index (0 = perfect equality),41.8
+USA,United States,2019,SI.POV.GINI,Gini index (0 = perfect equality),41.9
+USA,United States,2020,SI.POV.GINI,Gini index (0 = perfect equality),40.0
+USA,United States,2021,SI.POV.GINI,Gini index (0 = perfect equality),39.7
+USA,United States,2022,SI.POV.GINI,Gini index (0 = perfect equality),41.7
+USA,United States,2023,SI.POV.GINI,Gini index (0 = perfect equality),41.8
+USA,United States,1990,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.998
+USA,United States,1991,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.877
+USA,United States,1992,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.299
+USA,United States,1993,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.403
+USA,United States,1994,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.345
+USA,United States,1995,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.576
+USA,United States,1996,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.856
+USA,United States,1997,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.4
+USA,United States,1998,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.386
+USA,United States,1999,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.551
+USA,United States,2000,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.682
+USA,United States,2001,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.521
+USA,United States,2002,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.351
+USA,United States,2003,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.224
+USA,United States,2004,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.944
+USA,United States,2005,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.04
+USA,United States,2006,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.161
+USA,United States,2007,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.086
+USA,United States,2008,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.293
+USA,United States,2009,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",58.054
+USA,United States,2010,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",57.516
+USA,United States,2011,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.998
+USA,United States,2012,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.778
+USA,United States,2013,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.362
+USA,United States,2014,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.197
+USA,United States,2015,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.938
+USA,United States,2016,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.095
+USA,United States,2017,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.395
+USA,United States,2018,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.471
+USA,United States,2019,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.868
+USA,United States,2020,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.704
+USA,United States,2021,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",55.632
+USA,United States,2022,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.029
+USA,United States,2023,SL.TLF.CACT.FE.ZS,"Labour force participation rate, female (% of female pop. 15+)",56.602
+USA,United States,1991,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",6.8
+USA,United States,1992,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",7.5
+USA,United States,1993,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",6.9
+USA,United States,1994,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",6.119
+USA,United States,1995,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.65
+USA,United States,1996,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.451
+USA,United States,1997,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.0
+USA,United States,1998,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.511
+USA,United States,1999,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.219
+USA,United States,2000,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",3.992
+USA,United States,2001,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.731
+USA,United States,2002,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.783
+USA,United States,2003,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.989
+USA,United States,2004,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.529
+USA,United States,2005,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.084
+USA,United States,2006,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.623
+USA,United States,2007,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.622
+USA,United States,2008,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.784
+USA,United States,2009,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",9.254
+USA,United States,2010,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",9.633
+USA,United States,2011,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.949
+USA,United States,2012,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.069
+USA,United States,2013,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",7.375
+USA,United States,2014,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",6.168
+USA,United States,2015,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.28
+USA,United States,2016,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.869
+USA,United States,2017,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",4.355
+USA,United States,2018,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",3.896
+USA,United States,2019,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",3.669
+USA,United States,2020,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",8.055
+USA,United States,2021,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",5.349
+USA,United States,2022,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",3.65
+USA,United States,2023,SL.UEM.TOTL.ZS,"Unemployment, total (% of labour force)",3.638
+USA,United States,1960,SP.DYN.TFRT.IN,Total fertility rate (births per woman),3.654
+USA,United States,1961,SP.DYN.TFRT.IN,Total fertility rate (births per woman),3.62
+USA,United States,1962,SP.DYN.TFRT.IN,Total fertility rate (births per woman),3.461
+USA,United States,1963,SP.DYN.TFRT.IN,Total fertility rate (births per woman),3.319
+USA,United States,1964,SP.DYN.TFRT.IN,Total fertility rate (births per woman),3.19
+USA,United States,1965,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.913
+USA,United States,1966,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.721
+USA,United States,1967,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.558
+USA,United States,1968,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.464
+USA,United States,1969,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.456
+USA,United States,1970,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.48
+USA,United States,1971,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.266
+USA,United States,1972,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.01
+USA,United States,1973,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.879
+USA,United States,1974,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.835
+USA,United States,1975,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.774
+USA,United States,1976,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.738
+USA,United States,1977,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.79
+USA,United States,1978,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.76
+USA,United States,1979,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.808
+USA,United States,1980,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8395
+USA,United States,1981,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.812
+USA,United States,1982,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8275
+USA,United States,1983,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.799
+USA,United States,1984,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8065
+USA,United States,1985,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.844
+USA,United States,1986,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8375
+USA,United States,1987,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.872
+USA,United States,1988,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.934
+USA,United States,1989,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.014
+USA,United States,1990,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.081
+USA,United States,1991,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0625
+USA,United States,1992,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.046
+USA,United States,1993,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0195
+USA,United States,1994,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0015
+USA,United States,1995,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.978
+USA,United States,1996,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.976
+USA,United States,1997,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.971
+USA,United States,1998,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.999
+USA,United States,1999,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0075
+USA,United States,2000,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.056
+USA,United States,2001,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0305
+USA,United States,2002,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0205
+USA,United States,2003,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0475
+USA,United States,2004,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.0515
+USA,United States,2005,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.057
+USA,United States,2006,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.108
+USA,United States,2007,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.12
+USA,United States,2008,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.072
+USA,United States,2009,SP.DYN.TFRT.IN,Total fertility rate (births per woman),2.002
+USA,United States,2010,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.931
+USA,United States,2011,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8945
+USA,United States,2012,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8805
+USA,United States,2013,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8575
+USA,United States,2014,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8625
+USA,United States,2015,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8435
+USA,United States,2016,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.8205
+USA,United States,2017,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.7655
+USA,United States,2018,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.7295
+USA,United States,2019,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.706
+USA,United States,2020,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.6415
+USA,United States,2021,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.664
+USA,United States,2022,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.6565
+USA,United States,2023,SP.DYN.TFRT.IN,Total fertility rate (births per woman),1.6165
+USA,United States,1960,SP.URB.TOTL.IN.ZS,Urban population (% of total),69.9799062047416
+USA,United States,1961,SP.URB.TOTL.IN.ZS,Urban population (% of total),70.4455872729358
+USA,United States,1962,SP.URB.TOTL.IN.ZS,Urban population (% of total),70.9235327611362
+USA,United States,1963,SP.URB.TOTL.IN.ZS,Urban population (% of total),71.3977756159267
+USA,United States,1964,SP.URB.TOTL.IN.ZS,Urban population (% of total),71.8549474048995
+USA,United States,1965,SP.URB.TOTL.IN.ZS,Urban population (% of total),72.281679695647
+USA,United States,1966,SP.URB.TOTL.IN.ZS,Urban population (% of total),72.6646040557613
+USA,United States,1967,SP.URB.TOTL.IN.ZS,Urban population (% of total),72.9903520528347
+USA,United States,1968,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.2455552544594
+USA,United States,1969,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.4168452282277
+USA,United States,1970,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.4952537807929
+USA,United States,1971,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.5330324597265
+USA,United States,1972,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.5628076749457
+USA,United States,1973,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.5855186931405
+USA,United States,1974,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.6035786053068
+USA,United States,1975,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.6194005024406
+USA,United States,1976,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.6353974755378
+USA,United States,1977,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.6539826155944
+USA,United States,1978,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.6775690136064
+USA,United States,1979,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.7085697605697
+USA,United States,1980,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.7506044021808
+USA,United States,1981,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.8139615156658
+USA,United States,1982,SP.URB.TOTL.IN.ZS,Urban population (% of total),73.9035480290863
+USA,United States,1983,SP.URB.TOTL.IN.ZS,Urban population (% of total),74.0163473769595
+USA,United States,1984,SP.URB.TOTL.IN.ZS,Urban population (% of total),74.1500514363544
+USA,United States,1985,SP.URB.TOTL.IN.ZS,Urban population (% of total),74.30235208434
+USA,United States,1986,SP.URB.TOTL.IN.ZS,Urban population (% of total),74.4709411979853
+USA,United States,1987,SP.URB.TOTL.IN.ZS,Urban population (% of total),74.6535106543594
+USA,United States,1988,SP.URB.TOTL.IN.ZS,Urban population (% of total),74.8477523305311
+USA,United States,1989,SP.URB.TOTL.IN.ZS,Urban population (% of total),75.0513581035696
+USA,United States,1990,SP.URB.TOTL.IN.ZS,Urban population (% of total),75.2685508261939
+USA,United States,1991,SP.URB.TOTL.IN.ZS,Urban population (% of total),75.543016838308
+USA,United States,1992,SP.URB.TOTL.IN.ZS,Urban population (% of total),75.8943317611462
+USA,United States,1993,SP.URB.TOTL.IN.ZS,Urban population (% of total),76.2998113365493
+USA,United States,1994,SP.URB.TOTL.IN.ZS,Urban population (% of total),76.7405657773027
+USA,United States,1995,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.1977052961919
+USA,United States,1996,SP.URB.TOTL.IN.ZS,Urban population (% of total),77.6523401060025
+USA,United States,1997,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.0855804195199
+USA,United States,1998,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.4785364495296
+USA,United States,1999,SP.URB.TOTL.IN.ZS,Urban population (% of total),78.812318408817
+USA,United States,2000,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.0740897861327
+USA,United States,2001,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.3086223667912
+USA,United States,2002,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.5461039768657
+USA,United States,2003,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.7773350255284
+USA,United States,2004,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.9960936968363
+USA,United States,2005,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.1961581748464
+USA,United States,2006,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.3713066436159
+USA,United States,2007,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.5153172872016
+USA,United States,2008,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.6219682896606
+USA,United States,2009,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.6850378350499
+USA,United States,2010,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.6997744673366
+USA,United States,2011,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.6957554256024
+USA,United States,2012,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.6837493386238
+USA,United States,2013,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.660889281215
+USA,United States,2014,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.6242231779766
+USA,United States,2015,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.5707989535091
+USA,United States,2016,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.4976645324131
+USA,United States,2017,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.4018678392891
+USA,United States,2018,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.2804567987377
+USA,United States,2019,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.1304793353594
+USA,United States,2020,SP.URB.TOTL.IN.ZS,Urban population (% of total),79.997451762548
+USA,United States,2021,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.0074765140272
+USA,United States,2022,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.0324978239707
+USA,United States,2023,SP.URB.TOTL.IN.ZS,Urban population (% of total),80.071561119178
