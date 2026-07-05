@@ -11,7 +11,30 @@
 \usepackage{natbib}
 \usepackage{parskip}
 \usepackage{caption}
-\usepackage{float}
+\usepackage{placeins}
+\usepackage{titlesec}
+
+% Compact chapter/section headings (avoid half-empty chapter opening pages)
+\titleformat{\chapter}[hang]{\bfseries\Huge}{\thechapter.}{0.6em}{}
+\titlespacing*{\chapter}{0pt}{2.5ex plus 1ex minus .2ex}{2.5ex plus .2ex}
+\titleformat{\section}{\bfseries\large}{\thesection}{0.5em}{}
+\titlespacing*{\section}{0pt}{2.5ex plus 1ex}{1.5ex plus .2ex}
+\titleformat{name=\subsection,numberless}{\bfseries\normalsize}{}{0em}{}
+\titlespacing*{name=\subsection,numberless}{0pt}{2ex plus .5ex}{1ex plus .2ex}
+
+% Float spacing — flexible placement avoids large white gaps from [H]
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{14pt plus 2pt minus 4pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\raggedbottom
+
+% Figures: default cap height; tall variant for multi-panel grids
+\newcommand{\figfile}[1]{%
+  \includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{#1}%
+}
+\newcommand{\figtall}[1]{%
+  \includegraphics[width=\linewidth,height=0.72\textheight,keepaspectratio]{#1}%
+}
 
 \newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 \newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
@@ -62,6 +85,7 @@ Sub-replacement fertility is now the norm across most high-income countries, yet
 \listoftables
 
 \mainmatter
+\FloatBarrier
 
 \chapter{Introduction}
 
@@ -108,6 +132,7 @@ Survey items on desired family size are not interchangeable: ``ideal'' family si
 
 Chapters~\ref{sec:highincome}--\ref{sec:regional} establish \emph{levels and geographic variation} (evidence type~1); Chapter~\ref{sec:macro} adds aggregate co-movement for the US and UK (type~2). Chapters~\ref{sec:mechanisms} and~\ref{sec:reversal} review mechanism claims and policy evaluation respectively, with explicit attention to which evidence type supports each claim. Chapter~\ref{sec:methods} documents data sources and replication; Chapter~\ref{ch:conclusion} synthesises findings and lists open questions. Readers interested only in policy effect sizes may read Chapters~\ref{sec:mechanisms} (intentions gap),~\ref{sec:reversal}, and~\ref{sec:methods}; readers interested in global patterns should begin with Chapters~\ref{sec:highincome} and~\ref{sec:regional}.
 
+\FloatBarrier
 \chapter{High-income economies}
 \label{sec:highincome}
 
@@ -117,9 +142,9 @@ This chapter documents period fertility among \SnapshotN{} high-income economies
 
 The demographic transition---from high mortality and high fertility to low mortality and low fertility---originated in Western Europe and diffused globally over the twentieth century \citep{frejka2017}. Among high-income economies today, period fertility is predominantly sub-replacement. Figure~\ref{fig:countries} and Table~\ref{tab:countries} report TFR for \SnapshotN{} countries in year~\SnapshotYear{}, ordered from highest to lowest. With the exception of Israel, every country in the sample lies below 2.1; Korea records the lowest TFR in the panel (0.92), and several Southern European cases register TFR below 1.4.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig4_tfr_by_country.pdf}
+  \figfile{figures/fig4_tfr_by_country.pdf}
   \caption[TFR by country]{%
     \textbf{TFR by country (}\SnapshotYear\textbf{).}
     Highlighted bars: United States, United Kingdom, Israel.
@@ -144,9 +169,9 @@ Israel departs from the association between national income and low fertility. P
 
 The United States and United Kingdom provide the longest continuous harmonised series in the project and serve as reference cases throughout. Figures~\ref{fig:timeline} and~\ref{fig:decades} plot TFR, 1960--2023, in native units (no index rebasing). US TFR fell from 3.65 (1960) to 1.62 (2023); UK TFR from 2.69 (1960) to 1.56 (2023). The United States has remained below replacement since 1972 and the United Kingdom since 1973; both registered a further decline after approximately 2008. The UK exhibits a partial recovery around 2000--2010 that the US does not share.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig1_tfr_timeline.pdf}
+  \figfile{figures/fig1_tfr_timeline.pdf}
   \caption[TFR over time]{%
     \textbf{Total fertility rate, 1960--2023.}
     United States (blue) and United Kingdom (orange).
@@ -157,9 +182,9 @@ The United States and United Kingdom provide the longest continuous harmonised s
 
 Figure~\ref{fig:timeline} highlights four phases visible in both series: the late-1960s peak associated with the tail end of the baby boom; the rapid decline through the 1970s that brought both countries to sub-replacement levels (the US from 1972, the UK from 1973); relative stability with minor fluctuations from the 1980s through the early 2000s; and renewed decline after the late 2000s, with the UK showing a clearer mid-period uptick than the US. The parallel paths confirm broad commonality in timing, but the level gap---the UK persistently at or slightly below the US after 1980---reminds us that similar trends can coexist with different institutional environments (leave policy, childcare provision, housing markets).
 
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig2_tfr_decades.pdf}
+  \figfile{figures/fig2_tfr_decades.pdf}
   \caption[Decadal TFR]{%
     \textbf{Average TFR by decade.}
     Each bar is the mean across all years in that decade.
@@ -170,11 +195,11 @@ Figure~\ref{fig:timeline} highlights four phases visible in both series: the lat
 Figure~\ref{fig:decades} aggregates the annual series into decadal means to suppress year-to-year noise. Both countries show a sustained downward shift from the 1960s peak, but neither decline is strictly monotonic: the US registers a partial plateau in the 1990s--2000s (echo of the baby-boom cohort reaching childbearing ages), and the UK exhibits a clearer recovery in the 2000s before both series turn down again in the 2010s. Neither decadal smoothing nor annual data identify \emph{why} any phase occurred. The post-2008 decline coincided with the Great Recession and its aftermath; macroeconomic uncertainty and housing-cost pressures are plausible correlates, but two-country time series cannot disentangle cyclical tempo effects from structural quantum change \citep{sobotka2017,adsera2011}. These series establish magnitude and timing for the high-income benchmark cases used later in Chapter~\ref{sec:macro}.
 
 \section{Israel in comparative perspective}
-Israel is included not as a template for pronatalist policy but as a warning about aggregate statistics. Figure~\ref{fig:contrast} places Israel alongside the US and UK on the same scale; Figure~\ref{fig:israel_groups} then decomposes Israeli fertility by religiosity.
+Israel is included not as a template for pronatalist policy but as a warning about aggregate statistics. Figure~\ref{fig:contrast} places Israel alongside the US and UK on the same scale.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig5_tfr_contrast.pdf}
+  \figfile{figures/fig5_tfr_contrast.pdf}
   \caption[US, UK, Israel TFR]{%
     \textbf{Total fertility rate: US, UK, and Israel.}
     Dashed line: replacement level (2.1).
@@ -182,42 +207,43 @@ Israel is included not as a template for pronatalist policy but as a warning abo
   \label{fig:contrast}
 \end{figure}
 
-Israeli TFR declined from the high 3s in the 1960s but stabilised near 3.0 from the 1990s onward (with a modest decline toward 2.9 in the most recent vintages) while US and UK fertility converged near 1.6--1.7. The divergence after 1990 is visually stark in Figure~\ref{fig:contrast}: three high-income jurisdictions with increasingly different demographic outcomes. Secular Jewish women exhibit fertility comparable to other OECD populations; the national aggregate is elevated by religious communities with completed fertility of four or more children \citep{okun2013}. Without Figure~\ref{fig:israel_groups}, the contrast line alone would invite incorrect policy inference.
+Israeli TFR declined from the high 3s in the 1960s but stabilised near 3.0 from the 1990s onward (with a modest decline toward 2.9 in the most recent vintages) while US and UK fertility converged near 1.6--1.7. The divergence after 1990 is visually stark in Figure~\ref{fig:contrast}: three high-income jurisdictions with increasingly different demographic outcomes. Secular Jewish women exhibit fertility comparable to other OECD populations; the national aggregate is elevated by religious communities with completed fertility of four or more children \citep{okun2013}. Figure~\ref{fig:israel_groups} decomposes Israeli fertility by religiosity; without it, the contrast line alone would invite incorrect policy inference.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{figures/fig7_israel_groups.pdf}
-  \caption[Israel by religiosity]{%
+\begin{center}
+  \figfile{figures/fig7_israel_groups.pdf}
+  \captionof{figure}{%
     \textbf{Israel: period TFR by religiosity (Jewish women).}
     Secular fertility resembles other OECD countries; ultra-Orthodox fertility drives the national aggregate above replacement.
     Dashed line: replacement level (2.1).
     Source: Israel Social Survey; JPPI (2023).}
   \label{fig:israel_groups}
-\end{figure}
+\end{center}
 
 Figure~\ref{fig:israel_groups} shows period TFR near 2.0 for secular Jewish women---broadly in line with France or the US---against values above six for ultra-Orthodox women. National TFR near 3.0 is a weighted average across sub-populations, not a homogeneous country effect. Any comparative inference that treats Israel as a ``high-fertility high-income country'' without compositional adjustment risks attributing to policy what is largely population structure. This lesson extends beyond Israel: wherever sub-group fertility differs sharply by education, religiosity, or ethnicity, single national series understate the analytical work required \citep{okun2013}. Together, the high-income evidence establishes that sub-replacement fertility is the modal outcome among wealthy economies, that institutional context generates wide dispersion at comparable income levels, and that aggregate national series can mislead when sub-populations diverge sharply---themes that recur when the lens widens to Asia, MENA, and Sub-Saharan Africa in the next chapter.
 
+\FloatBarrier
 \chapter{Asia, the Middle East, and Africa}
 \label{sec:regional}
 
 High-income cases occupy one stage of the global transition. The evidence taxonomy introduced in Chapter~1 applies equally here: the regional panels below provide documentation (type~1) of how far the transition has progressed outside the OECD core, before Chapter~\ref{sec:macro} returns to aggregate association for the US and UK benchmark cases. Much of Asia, the Middle East and North Africa (MENA), and Sub-Saharan Africa remain at different points on the same trajectory: pre-transitional fertility in some settings, rapid decline in others, and---in East Asia---fertility as low as any region worldwide \citep{frejka2017}. Convergence toward low fertility has proceeded through disparate paths; mechanism weights therefore differ by region. The regional summaries below describe patterns in prose; Figures~\ref{fig:regional_snapshot} and~\ref{fig:regional_traj} then provide cross-sectional and longitudinal illustrations. Country selection is purposive---twelve cases per region, four trajectories per region---and is not a representative sample for formal hypothesis tests.
 
-\paragraph{Asia.}
+\subsection*{Asia}
+
 East Asian economies entered ultra-low fertility earliest: Japan registers period TFR near 1.2--1.4 in recent WDI vintages; Korea has fallen below 1.0 (0.92 in the \SnapshotYear{} high-income snapshot; 0.78 in \RegionalYear{}). China's period TFR fell from roughly six to seven in the 1960s and early 1970s to approximately 1.0--1.2 following restrictive population policy and subsequent relaxation; official statistics have been subject to revision and debate, so precise levels should be read with measurement caution \citep{frejka2017}. India and Bangladesh have recorded steep declines---India crossed below replacement in the early 2020s (\RegionalYear{} WDI: 1.99) while Bangladesh remained above it (2.18); Pakistan and the Philippines lag within the region on the transition path. Asia thus spans the full contemporary range of period fertility.
 
-\paragraph{Middle East and North Africa.}
+\subsection*{Middle East and North Africa}
+
 Iran underwent one of the steepest recorded declines---from about seven births per woman in the mid-1980s to near replacement within two decades---coincident with expanded female schooling and family-planning provision \citep{frejka2017}. Turkey has fallen below replacement in recent vintages (1.63 in \RegionalYear{} WDI); Egypt and Morocco remain above it (2.75 and 2.26) but have declined substantially from higher pre-transition levels. Gulf states including Saudi Arabia (2.14 in \RegionalYear{}) sit nearer replacement than a generation ago but trend downward. Conflict-affected cases (Yemen, Iraq) exhibit gaps and volatility in harmonised series that limit inference.
 
-\paragraph{Sub-Saharan Africa.}
+\subsection*{Sub-Saharan Africa}
+
 Period fertility remains highest globally: Niger exceeds six births per woman. Nigeria, the most populous country in the region, records TFR near five with a declining trend. Ethiopia and Kenya illustrate rapid transition from very high levels; South Africa, at TFR near 2.2, reflects earlier urbanisation and the demographic impact of HIV \citep{frejka2017}. The transition is underway but geographically uneven. Where fertility remains high, the relevant margin is often unwanted or mistimed fertility and contraceptive access rather than the intentions--constraints gap that dominates low-fertility research \citep{casterline2003}.
 
-These regional patterns imply that the mechanisms reviewed in Chapter~\ref{sec:mechanisms} operate with different weights depending on stage of development, policy history, and population composition. Restrictive population policy (China), expansion of contraceptive access (Iran, Bangladesh), and slower structural change (parts of West Africa) represent distinct pathways toward the same broad outcome: lower period fertility.
+These regional patterns imply that the mechanisms reviewed in Chapter~\ref{sec:mechanisms} operate with different weights depending on stage of development, policy history, and population composition. Restrictive population policy (China), expansion of contraceptive access (Iran, Bangladesh), and slower structural change (parts of West Africa) represent distinct pathways toward the same broad outcome: lower period fertility. Figure~\ref{fig:regional_snapshot} compresses the three regional narratives into a single cross-section (\RegionalYear{} WDI vintages; the high-income bar chart in Figure~\ref{fig:countries} uses \SnapshotYear{}, as noted in Chapter~\ref{sec:methods}).
 
-Figure~\ref{fig:regional_snapshot} compresses the three regional narratives into a single cross-section. East Asia occupies the lower end of the Asia panel; Niger and Nigeria anchor the upper end of the Sub-Saharan panel; MENA spans the middle, with Iran and Turkey at or below replacement and Gulf states such as Saudi Arabia still elevated. The cross-section uses \RegionalYear{} WDI vintages; the high-income bar chart in Figure~\ref{fig:countries} uses \SnapshotYear{}---a deliberate choice to maximise country coverage in each panel, noted again in Chapter~\ref{sec:methods}.
-
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig10_regional_snapshot.pdf}
+  \figfile{figures/fig10_regional_snapshot.pdf}
   \caption[Regional TFR levels]{%
     \textbf{TFR by country in three regions (}\RegionalYear\textbf{).}
     Asia; Middle East and North Africa; Sub-Saharan Africa.
@@ -227,48 +253,45 @@ Figure~\ref{fig:regional_snapshot} compresses the three regional narratives into
   \label{fig:regional_snapshot}
 \end{figure}
 
-The three panels make the regional heterogeneity concrete: ultra-low East Asia, mid-transition South Asia and MENA, and still-elevated but declining fertility across much of Sub-Saharan Africa. The rankings are descriptive only; they do not test whether any single mechanism drives the cross-country spread.
-
-The snapshot confirms that ``Asia,'' ``MENA,'' and ``Sub-Saharan Africa'' are not homogeneous blocs. Japan and Korea sit below most European countries; Bangladesh remains above replacement while India has crossed below it in recent vintages; Niger and Nigeria exceed five births per woman while South Africa has transitioned further (TFR near 2.2 in \RegionalYear{} WDI); Kenya and Ethiopia remain higher but are declining from earlier levels. Comparing regional panels to Figure~\ref{fig:countries} situates high-income cases within this wider dispersion: US and UK TFR would appear in the lower-middle of the Asia panel if plotted on the same scale.
+The three panels make the regional heterogeneity concrete: ultra-low East Asia, mid-transition South Asia and MENA, and still-elevated but declining fertility across much of Sub-Saharan Africa. Japan and Korea sit below most European countries; Bangladesh remains above replacement while India has crossed below it in recent vintages; Niger and Nigeria exceed five births per woman while South Africa has transitioned further (TFR near 2.2); Kenya and Ethiopia remain higher but are declining from earlier levels. US and UK TFR would appear in the lower-middle of the Asia panel if plotted on the same scale. The rankings are descriptive only; they do not test whether any single mechanism drives the cross-country spread.
 
 Longitudinal perspective is essential because cross-sections conflate countries at different transition stages. Figure~\ref{fig:regional_traj} traces four illustrative series per region from 1960 to 2023.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{figures/fig11_regional_trajectories.pdf}
-  \caption[Regional TFR trajectories]{%
+\begin{center}
+  \figfile{figures/fig11_regional_trajectories.pdf}
+  \captionof{figure}{%
     \textbf{Selected fertility trajectories, 1960--2023.}
     Asia: China, India, Japan, Bangladesh.
     Middle East and N.\ Africa: Iran, Egypt, Turkey, Morocco.
     Sub-Saharan Africa: Niger, Nigeria, Kenya, Ethiopia.
     Source: World Bank WDI.}
   \label{fig:regional_traj}
-\end{figure}
+\end{center}
 
 In Figure~\ref{fig:regional_traj}, China's line exhibits the steepest sustained decline; Iran shows a late but rapid fall from the 1980s; Japan converges toward ultra-low levels from an already-low starting point while India and Bangladesh decline from higher pre-transition baselines; Niger and Nigeria decline more slowly from very high baselines. These trajectories reinforce that timing and speed of decline vary as much as current level. The global picture is therefore one of convergence toward lower period fertility through heterogeneous paths---not a single model of ``development then 1.5 children.'' Chapter~\ref{sec:macro} narrows the lens again to the US and UK to examine whether macroeconomic indicators co-move with fertility over the same 1960--2023 window; that exercise is intentionally limited to two countries and serves as a bridge from documentation to the mechanism literature.
 
+\FloatBarrier
 \chapter{Macroeconomic indicators alongside fertility (US and UK)}
 \label{sec:macro}
 
 Chapters~\ref{sec:highincome} and~\ref{sec:regional} documented fertility levels and trajectories. Economic accounts of decline often invoke parallel movement in education, income, urbanisation, and female employment. This chapter tests that intuition \emph{descriptively} for the US and UK---the two countries with the longest harmonised WDI series in the report---before Chapter~\ref{sec:mechanisms} turns to mechanism-specific evidence. Nothing in the figures below identifies causal effects; they illustrate co-movement only. Figures~\ref{fig:all_indicators} and~\ref{fig:correlates} plot TFR jointly with selected World Bank indicators for the same two countries, 1960--2023. Each panel uses native units; no rebasing is applied.
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{figures/figA_small_multiples.pdf}
-  \caption[All indicators]{%
+\begin{center}
+  \figtall{figures/figA_small_multiples.pdf}
+  \captionof{figure}{%
     \textbf{World Bank indicators, 1960--2023.}
     Each panel has an independent y-axis.
     United States (blue); United Kingdom (orange).
     Dashed line in the TFR panel: replacement level (2.1).
     Source: World Bank WDI.}
   \label{fig:all_indicators}
-\end{figure}
+\end{center}
 
 Figure~\ref{fig:all_indicators} displays the full indicator set retrieved from WDI: fertility alongside female and male labour-force participation, tertiary enrolment, GDP per capita, health expenditure, urbanisation, and life expectancy. Fertility falls while enrolment, GDP, health spending, urbanisation, and longevity rise in both countries---the classic transition pattern. Female labour-force participation diverges: it rises in the UK through the sample period but in the US peaks around 2000 and then declines, a pattern visible in the second row of panels and directly relevant to opportunity-cost mechanisms discussed in Chapter~\ref{sec:mechanisms}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig3_correlates_timeseries.pdf}
+  \figfile{figures/fig3_correlates_timeseries.pdf}
   \caption[Selected macro series]{%
     \textbf{Selected macroeconomic series (US and UK).}
     Female tertiary enrolment, female labour-force participation, GDP per capita, urbanisation.
@@ -279,12 +302,13 @@ Figure~\ref{fig:all_indicators} displays the full indicator set retrieved from W
 
 Figure~\ref{fig:correlates} isolates four series most often invoked in fertility debates. Tertiary enrolment and GDP per capita trend upward throughout the sample; urbanisation rises steadily; female participation rises in the UK but in the US peaks around 2000 before edging down---yet fertility declines in both countries over the long run. Parallel movement in two national time series is consistent with several of the mechanisms below, but it does not identify causal effects: omitted trends, reverse causality, and small effective sample size (two countries, sixty-four years) preclude credible inference. This chapter is strictly descriptive. The juxtaposition nonetheless clarifies why macro panels alone cannot adjudicate between competing accounts---a limitation that motivates the mechanism review in Chapter~\ref{sec:mechanisms}, beginning with a summary table of proposed channels and evidence types.
 
+\FloatBarrier
 \chapter{Proposed mechanisms: evidence and limits}
 \label{sec:mechanisms}
 
 Demographic research proposes multiple mechanisms for fertility decline. Having documented levels, trends, and aggregate co-movement in Chapters~\ref{sec:highincome}--\ref{sec:macro}, this chapter matches each proposed channel to the evidence taxonomy introduced in Chapter~1. The central task is not to declare a winner among mechanisms but to state, for each, what the best available evidence can and cannot establish. Table~\ref{tab:mechanisms} maps each mechanism to representative studies and classifies the evidence type. Strict causal claims require a credible counterfactual---typically a quasi-experiment. Surveys, decomposition, and correlational micro-data can inform mechanism plausibility but do not, by themselves, establish that a factor \emph{caused} fertility to fall. In practice, mechanisms interact: education raises opportunity costs while also shifting values; postponement amplifies the gap between period TFR and stated ideals; policy partially offsets cost pressures but rarely eliminates them \citep{doepke2023,sobotka2020}.
 
-\begin{table}[H]
+\begin{table}[htbp]
   \centering
   \caption{Proposed mechanisms and type of evidence}
   \label{tab:mechanisms}
@@ -370,9 +394,9 @@ Low fertility is inseparable from changing partnership behaviour. Median ages at
 
 A substantial share of post-2000 period fertility decline reflects \emph{tempo}---the timing of births---rather than a reduction in desired family size \citep{bongaarts1998,sobotka2017}. Across Europe and the US, stated ideals cluster near two children while period fertility often lies between 1.3 and 1.7 \citep{perelliharris2016,sobotka2014}. The intentions--outcomes gap is the central descriptive bridge between mechanism discussion and policy evaluation: it documents a preference--realisation wedge (evidence type~3) that pronatalist programmes attempt to close (type~4). Figure~\ref{fig:intentions} compares GGS-II ideals (2020--2023) with period TFR from vital statistics for selected countries.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig6_intentions_gap.pdf}
+  \figfile{figures/fig6_intentions_gap.pdf}
   \caption[Intentions gap]{%
     \textbf{Stated fertility ideals versus period TFR.}
     Ideals: GGS-II or Eurobarometer; period TFR: World Bank WDI (approx.\ 2020--2022).
@@ -386,6 +410,7 @@ The gaps in Figure~\ref{fig:intentions}---typically 0.5--1.0 children between st
 
 Cross-country panels with on the order of twenty to thirty observations face severe identification limits: unobserved heterogeneity (culture, migration regimes, welfare state design), simultaneous determination, and too few clusters for reliable inference \citep{myrskyla2009}. Two-country time series exhibit the same constraints with fewer degrees of freedom. Such data are appropriate for documentation and hypothesis generation---as in Chapters~\ref{sec:highincome}--\ref{sec:macro}---but not for attributing fertility decline to GDP, urbanisation, or enrolment rates. The intentions gap and policy evaluation literature reviewed in the next chapter address the question that aggregate data cannot answer alone: whether realised fertility falls short of stated preferences because constraints bind, and whether policy can relax those constraints.
 
+\FloatBarrier
 \chapter{Reversing fertility decline: theories, interventions, and evaluation evidence}
 \label{sec:reversal}
 
@@ -408,7 +433,7 @@ In the Beckerian tradition, fertility rises when the full price of children fall
 
 Governments have deployed a recurring toolkit. Table~\ref{tab:policytools} summarises instruments; the case summaries below review representative country experiences and evaluation designs.
 
-\begin{table}[H]
+\begin{table}[htbp]
   \centering
   \caption{Policy instruments used to raise fertility}
   \label{tab:policytools}
@@ -465,9 +490,9 @@ The largest-scale ``fertility reversal'' attempt in recent decades was China's s
 
 Figure~\ref{fig:policy} juxtaposes two published benchmarks on \emph{different} outcomes: a quasi-experimental estimate of the effect of a cash transfer on birth probability (left panel), and an order-of-magnitude range from a meta-review of combined family-policy packages on period TFR (right panel). The panels are not directly comparable; they illustrate the scale of effects that high-quality evaluation and synthesis studies typically find. Table~\ref{tab:policytools} and the paragraphs below place these benchmarks in the wider evidence base.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
   \centering
-  \includegraphics[width=\linewidth]{figures/fig8_policy_effects.pdf}
+  \figfile{figures/fig8_policy_effects.pdf}
   \caption[Policy effects]{%
     \textbf{Illustrative fertility-policy effect sizes (published estimates).}
     Left: Milligan (2005), Quebec baby bonus (DiD), change in birth probability.
@@ -488,6 +513,7 @@ The policy literature therefore supports a restrained conclusion aligned with th
 
 Having mapped why fertility falls (Chapter~\ref{sec:mechanisms}) and what has been tried to raise it (Chapter~\ref{sec:reversal}), the next chapter states explicitly which data sources and identification designs the field relies on.
 
+\FloatBarrier
 \chapter{Data and methods}
 \label{sec:methods}
 
@@ -512,6 +538,7 @@ All WDI-based figures are generated from \texttt{python main.py}, which retrieve
 
 Harmonised macro series involve known limitations: vintage revisions, varying registration completeness (especially in conflict settings), conceptual mismatch between survey-based and vital-statistics fertility measures, and the compression of heterogeneous sub-populations into national averages. Israel (Figure~\ref{fig:israel_groups}) is the clearest example in this report; similar heterogeneity by education, ethnicity, or religiosity exists elsewhere but is rarely visible in WDI alone. The figures in this report draw primarily on WDI for cross-national comparability; mechanism claims draw on the micro and quasi-experimental literature cited in Table~\ref{tab:mechanisms}.
 
+\FloatBarrier
 \chapter{Conclusion and open questions}
 \label{ch:conclusion}
 
