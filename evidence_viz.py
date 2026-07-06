@@ -24,31 +24,32 @@ def plot_intentions_gap(output_path: Path) -> None:
     y = np.arange(len(countries))
     height = 0.35
 
-    fig, ax = plt.subplots(figsize=(9, 6))
+    fig, ax = plt.subplots(figsize=(9, 6.5))
     ax.barh(y + height / 2, ideal, height, label="Ideal family size (survey)", color=PALETTE[0], alpha=0.9)
     ax.barh(y - height / 2, tfr, height, label="Period TFR (vital stats)", color=PALETTE[3], alpha=0.9)
     ax.axvline(REPLACEMENT_TFR, color="0.35", linestyle="--", linewidth=1.0)
 
+    x_right = max(max(ideal), max(tfr)) + 0.35
     for i, row in enumerate(INTENTIONS_GAP):
         gap = row.ideal - row.period_tfr
-        ax.text(max(row.ideal, row.period_tfr) + 0.05, i, f"gap {gap:.2f}", va="center", fontsize=8, color="0.35")
+        ax.text(x_right, i, f"gap {gap:.2f}", va="center", fontsize=8, color="0.35")
 
     ax.set_yticks(y)
     ax.set_yticklabels(countries)
     ax.set_xlabel("Children per woman")
     ax.set_title("Stated ideals vs achieved period fertility", fontweight="bold")
-    ax.set_xlim(0.9, 2.8)
-    ax.legend(loc="lower right", frameon=False)
+    ax.set_xlim(0.9, x_right + 0.15)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.08), ncol=2, frameon=False)
     ax.grid(axis="x", alpha=0.25, linewidth=0.5)
     fig.text(
         0.01,
-        -0.03,
+        -0.14,
         "Ideals: GGS-II (2020-2023) where available; Eurobarometer/GSS for FR, IT, ES, US. "
         "TFR: World Bank WDI (~2020-2022).",
         fontsize=7.5,
         color="0.35",
     )
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0.08, 1, 1))
     _save(fig, output_path)
 
 

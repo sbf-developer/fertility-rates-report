@@ -13,6 +13,8 @@
 \usepackage{caption}
 \usepackage{placeins}
 \usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{truncate}
 
 % Compact chapter/section headings (avoid half-empty chapter opening pages)
 \titleformat{\chapter}[hang]{\bfseries\Huge}{\thechapter.}{0.6em}{}
@@ -21,6 +23,23 @@
 \titlespacing*{\section}{0pt}{2.5ex plus 1ex}{1.5ex plus .2ex}
 \titleformat{name=\subsection,numberless}{\bfseries\normalsize}{}{0em}{}
 \titlespacing*{name=\subsection,numberless}{0pt}{2ex plus .5ex}{1ex plus .2ex}
+
+% Running headers — titlesec breaks default book marks (page number jammed into titles)
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\truncate{0.42\textwidth}{\nouppercase{\leftmark}}}
+\fancyhead[LO]{\truncate{0.42\textwidth}{\nouppercase{\rightmark}}}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headsep}{16pt}
+\addtolength{\headheight}{4pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
 
 % Float spacing — flexible placement avoids large white gaps from [H]
 \setlength{\floatsep}{10pt plus 2pt minus 2pt}
@@ -34,6 +53,9 @@
 }
 \newcommand{\figtall}[1]{%
   \includegraphics[width=\linewidth,height=0.72\textheight,keepaspectratio]{#1}%
+}
+\newcommand{\figsnapshot}[1]{%
+  \includegraphics[width=\linewidth,height=0.68\textheight,keepaspectratio]{#1}%
 }
 
 \newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
@@ -93,11 +115,11 @@ Fertility decline is one of the most consequential demographic shifts of the pas
 
 The total fertility rate (TFR) measures the number of children a woman would bear if current age-specific birth rates persisted through her reproductive life \citep{un2022}. A TFR of approximately \textbf{2.1} births per woman is conventionally treated as replacement level in low-mortality populations, though the precise threshold varies with mortality and sex ratio at birth.
 
-Since the mid-twentieth century, nearly every high-income country has transitioned from above-replacement fertility to sustained levels between roughly 1.3 and 1.8 \citep{frejka2017,kohler2002}. Korea now registers period TFR below 1.0 in harmonised WDI vintages; Japan and several peers remain near 1.2--1.4---levels that, if sustained, imply rapid population ageing, rising old-age dependency ratios, and---under standard economic assumptions---slower aggregate growth and fiscal pressure on pay-as-you-go pension systems \citep{jones2010,morgan2003,bloom2010}. The salient question is therefore no longer \emph{whether} fertility has fallen, but through which channels the decline operates, how those channels differ across development stages, and what---if anything---policy can alter at the margin.
+Since the mid-twentieth century, nearly every high-income country has transitioned from above-replacement fertility to sustained levels between roughly 1.3 and 1.8 \citep{frejka2017,kohler2002}. Korea now registers period TFR below 1.0 in harmonised WDI vintages; Japan and several peers remain near 1.2--1.4---levels that, if sustained, imply rapid population ageing, rising old-age dependency ratios, and---under standard economic assumptions---slower aggregate growth and fiscal pressure on pay-as-you-go pension systems \citep{morgan2003,bloom2010,mcdonald2006}. The salient question is therefore no longer \emph{whether} fertility has fallen, but through which channels the decline operates, how those channels differ across development stages, and what---if anything---policy can alter at the margin.
 
 The classic account of long-run decline emphasises the spread of mass education, reduced infant mortality, and the economic recalculation of childbearing costs within the family \citep{caldwell1982}. That framework remains foundational for the \emph{first} demographic transition. Post-industrial, sub-replacement fertility---often linked to the ``second demographic transition'' \citep{lesthaeghe2010}---raises distinct questions about partnership formation, gender equity within households, and the gap between stated preferences and realised births \citep{goldscheider2015,sobotka2017}. This report treats both transitions as background but focuses on the post-transitional, low-fertility regime where mechanism and policy debates are most active today.
 
-Competing explanations---economic development, female employment, secularisation, gender institutions, birth postponement---each account for part of the record and fail elsewhere. Female labour-force participation in the United States rose only modestly through 2000 and did not keep pace with the United Kingdom thereafter, while fertility continued to decline in both countries. France maintains higher fertility than Spain at comparable income levels. Israel remains at or above replacement despite income per capita above most OECD members \citep{okun2013}. Such cases rule out monocausal accounts and indicate that fertility outcomes depend on the interaction of preferences, constraints, and institutional context \citep{sobotka2017,doepke2023,billari2006}.
+Competing explanations---economic development, female employment, secularisation, gender institutions, birth postponement---each account for part of the record and fail elsewhere. Female labour-force participation in the United States rose only modestly through 2000 and did not keep pace with the United Kingdom thereafter, while fertility continued to decline in both countries. France maintains higher fertility than Spain at comparable income levels. Israel remains at or above replacement despite income per capita above most OECD members \citep{okun2013}. Such cases rule out monocausal accounts and indicate that fertility outcomes depend on the interaction of preferences, constraints, and institutional context \citep{sobotka2017,doepke2023,kohler2001}.
 
 Recent handbook-length syntheses, notably \citet{doepke2023}, have consolidated the economic literature on fertility determinants. The present report complements that work in four ways. \emph{First}, it foregrounds an evidence taxonomy---distinguishing documentation, association, description, and identification---so that claims are matched to what the underlying data can support. \emph{Second}, it embeds descriptive analysis in a deliberately global frame: high-income cases (with Israel as a compositional contrast), alongside purposive regional panels for Asia, MENA, and Sub-Saharan Africa. \emph{Third}, it reviews the parallel literature on \emph{raising} fertility---theories of pronatalist policy, documented country attempts, and quasi-experimental effect sizes---as a distinct but linked body of work (Chapter~\ref{sec:reversal}). \emph{Fourth}, all harmonised figures are reproducible from World Bank API pulls and published survey summaries, with replication code provided. The aim is not to supersede specialised reviews but to supply a disciplined map of the field for readers who need the empirical landscape, the limits of inference, and the state of policy evaluation in one place.
 
@@ -126,7 +148,7 @@ Period TFR summarises current age-specific birth rates and can move sharply when
 A decline in period TFR can reflect lower \emph{quantum} (fewer births over the life course), slower \emph{tempo} (later births), or both. Decomposition methods separate these components descriptively \citep{bongaarts1998}; they do not identify the socioeconomic forces behind postponement.
 
 \paragraph{Ideals, intentions, and expectations.}
-Survey items on desired family size are not interchangeable: ``ideal'' family size, ``intended'' births, and ``expected'' births capture different constructs and predict behaviour with different accuracy \citep{perelliharris2016,bujard2025}. The intentions--outcomes gap documented in Chapter~\ref{sec:mechanisms} refers primarily to \emph{stated ideals} from harmonised GGS-II summaries compared with period TFR.
+Survey items on desired family size are not interchangeable: ``ideal'' family size, ``intended'' births, and ``expected'' births capture different constructs and predict behaviour with different accuracy \citep{bachrach2013,bujard2025}. The intentions--outcomes gap documented in Chapter~\ref{sec:mechanisms} refers primarily to \emph{stated ideals} from harmonised GGS-II summaries compared with period TFR.
 
 \section{How to read this report}
 
@@ -142,16 +164,15 @@ This chapter documents period fertility among \SnapshotN{} high-income economies
 
 The demographic transition---from high mortality and high fertility to low mortality and low fertility---originated in Western Europe and diffused globally over the twentieth century \citep{frejka2017}. Among high-income economies today, period fertility is predominantly sub-replacement. Figure~\ref{fig:countries} and Table~\ref{tab:countries} report TFR for \SnapshotN{} countries in year~\SnapshotYear{}, ordered from highest to lowest. With the exception of Israel, every country in the sample lies below 2.1; Korea records the lowest TFR in the panel (0.92), and several Southern European cases register TFR below 1.4.
 
-\begin{figure}[htbp]
-  \centering
+\begin{center}
   \figfile{figures/fig4_tfr_by_country.pdf}
-  \caption[TFR by country]{%
+  \captionof{figure}{%
     \textbf{TFR by country (}\SnapshotYear\textbf{).}
     Highlighted bars: United States, United Kingdom, Israel.
     Dashed line: replacement level (2.1).
     Source: World Bank WDI.}
   \label{fig:countries}
-\end{figure}
+\end{center}
 
 Figure~\ref{fig:countries} displays the full cross-section visually. The dashed line at 2.1 marks replacement; highlighted bars identify the United States, United Kingdom, and Israel for later comparison with regional cases. At a glance, the distribution spans more than two births per woman from Israel (3.01) to Korea (0.92), with a dense cluster of sub-replacement cases between roughly 1.4 and 1.9. Southern European bars (Italy, Spain) sit visibly below Northwestern European and Nordic cases (France, Sweden, Denmark), previewing the institutional dispersion discussed below. Table~\ref{tab:countries} reports the same \SnapshotYear{} values in rank order for precise reference.
 
@@ -169,28 +190,26 @@ Israel departs from the association between national income and low fertility. P
 
 The United States and United Kingdom provide the longest continuous harmonised series in the project and serve as reference cases throughout. Figures~\ref{fig:timeline} and~\ref{fig:decades} plot TFR, 1960--2023, in native units (no index rebasing). US TFR fell from 3.65 (1960) to 1.62 (2023); UK TFR from 2.69 (1960) to 1.56 (2023). The United States has remained below replacement since 1972 and the United Kingdom since 1973; both registered a further decline after approximately 2008. The UK exhibits a partial recovery around 2000--2010 that the US does not share.
 
-\begin{figure}[htbp]
-  \centering
+\begin{center}
   \figfile{figures/fig1_tfr_timeline.pdf}
-  \caption[TFR over time]{%
+  \captionof{figure}{%
     \textbf{Total fertility rate, 1960--2023.}
     United States (blue) and United Kingdom (orange).
     Dashed line: replacement level (2.1).
     Source: World Bank WDI.}
   \label{fig:timeline}
-\end{figure}
+\end{center}
 
 Figure~\ref{fig:timeline} highlights four phases visible in both series: the late-1960s peak associated with the tail end of the baby boom; the rapid decline through the 1970s that brought both countries to sub-replacement levels (the US from 1972, the UK from 1973); relative stability with minor fluctuations from the 1980s through the early 2000s; and renewed decline after the late 2000s, with the UK showing a clearer mid-period uptick than the US. The parallel paths confirm broad commonality in timing, but the level gap---the UK persistently at or slightly below the US after 1980---reminds us that similar trends can coexist with different institutional environments (leave policy, childcare provision, housing markets).
 
-\begin{figure}[htbp]
-  \centering
+\begin{center}
   \figfile{figures/fig2_tfr_decades.pdf}
-  \caption[Decadal TFR]{%
+  \captionof{figure}{%
     \textbf{Average TFR by decade.}
     Each bar is the mean across all years in that decade.
     Source: World Bank WDI.}
   \label{fig:decades}
-\end{figure}
+\end{center}
 
 Figure~\ref{fig:decades} aggregates the annual series into decadal means to suppress year-to-year noise. Both countries show a sustained downward shift from the 1960s peak, but neither decline is strictly monotonic: the US registers a partial plateau in the 1990s--2000s (echo of the baby-boom cohort reaching childbearing ages), and the UK exhibits a clearer recovery in the 2000s before both series turn down again in the 2010s. Neither decadal smoothing nor annual data identify \emph{why} any phase occurred. The post-2008 decline coincided with the Great Recession and its aftermath; macroeconomic uncertainty and housing-cost pressures are plausible correlates, but two-country time series cannot disentangle cyclical tempo effects from structural quantum change \citep{sobotka2017,adsera2011}. These series establish magnitude and timing for the high-income benchmark cases used later in Chapter~\ref{sec:macro}.
 
@@ -237,13 +256,13 @@ Iran underwent one of the steepest recorded declines---from about seven births p
 
 \subsection*{Sub-Saharan Africa}
 
-Period fertility remains highest globally: Niger exceeds six births per woman. Nigeria, the most populous country in the region, records TFR near five with a declining trend. Ethiopia and Kenya illustrate rapid transition from very high levels; South Africa, at TFR near 2.2, reflects earlier urbanisation and the demographic impact of HIV \citep{frejka2017}. The transition is underway but geographically uneven. Where fertility remains high, the relevant margin is often unwanted or mistimed fertility and contraceptive access rather than the intentions--constraints gap that dominates low-fertility research \citep{casterline2003}.
+Period fertility remains highest globally: Niger exceeds six births per woman. Nigeria, the most populous country in the region, records TFR near five with a declining trend. Ethiopia and Kenya illustrate rapid transition from very high levels; South Africa, at TFR near 2.2, reflects earlier urbanisation and the demographic impact of HIV \citep{frejka2017}. The transition is underway but geographically uneven. Where fertility remains high, the relevant margin is often unwanted or mistimed fertility and contraceptive access rather than the intentions--constraints gap that dominates low-fertility research \citep{casterline2007}.
 
 These regional patterns imply that the mechanisms reviewed in Chapter~\ref{sec:mechanisms} operate with different weights depending on stage of development, policy history, and population composition. Restrictive population policy (China), expansion of contraceptive access (Iran, Bangladesh), and slower structural change (parts of West Africa) represent distinct pathways toward the same broad outcome: lower period fertility. Figure~\ref{fig:regional_snapshot} compresses the three regional narratives into a single cross-section (\RegionalYear{} WDI vintages; the high-income bar chart in Figure~\ref{fig:countries} uses \SnapshotYear{}, as noted in Chapter~\ref{sec:methods}).
 
 \begin{figure}[htbp]
   \centering
-  \figfile{figures/fig10_regional_snapshot.pdf}
+  \figsnapshot{figures/fig10_regional_snapshot.pdf}
   \caption[Regional TFR levels]{%
     \textbf{TFR by country in three regions (}\RegionalYear\textbf{).}
     Asia; Middle East and North Africa; Sub-Saharan Africa.
@@ -271,7 +290,7 @@ Longitudinal perspective is essential because cross-sections conflate countries 
 In Figure~\ref{fig:regional_traj}, China's line exhibits the steepest sustained decline; Iran shows a late but rapid fall from the 1980s; Japan converges toward ultra-low levels from an already-low starting point while India and Bangladesh decline from higher pre-transition baselines; Niger and Nigeria decline more slowly from very high baselines. These trajectories reinforce that timing and speed of decline vary as much as current level. The global picture is therefore one of convergence toward lower period fertility through heterogeneous paths---not a single model of ``development then 1.5 children.'' Chapter~\ref{sec:macro} narrows the lens again to the US and UK to examine whether macroeconomic indicators co-move with fertility over the same 1960--2023 window; that exercise is intentionally limited to two countries and serves as a bridge from documentation to the mechanism literature.
 
 \FloatBarrier
-\chapter{Macroeconomic indicators alongside fertility (US and UK)}
+\chapter[Macro indicators and fertility (US \& UK)]{Macroeconomic indicators alongside fertility (US and UK)}
 \label{sec:macro}
 
 Chapters~\ref{sec:highincome} and~\ref{sec:regional} documented fertility levels and trajectories. Economic accounts of decline often invoke parallel movement in education, income, urbanisation, and female employment. This chapter tests that intuition \emph{descriptively} for the US and UK---the two countries with the longest harmonised WDI series in the report---before Chapter~\ref{sec:mechanisms} turns to mechanism-specific evidence. Nothing in the figures below identifies causal effects; they illustrate co-movement only. Figures~\ref{fig:all_indicators} and~\ref{fig:correlates} plot TFR jointly with selected World Bank indicators for the same two countries, 1960--2023. Each panel uses native units; no rebasing is applied.
@@ -338,7 +357,7 @@ Demographic research proposes multiple mechanisms for fertility decline. Having 
     Theoretical \\[4pt]
     Partnership formation &
     Later and less stable unions reduce exposure to childbearing and compress reproductive windows. &
-    Longitudinal union--birth analyses \citep{kreyenfeld2012,raybould2021}. &
+    Longitudinal union--birth analyses \citep{perelliharris2012,perelliharris2012pd}. &
     Correlational \\[4pt]
     Birth postponement &
     Delayed childbearing depresses period TFR without necessarily lowering cohort completed fertility. &
@@ -346,11 +365,11 @@ Demographic research proposes multiple mechanisms for fertility decline. Having 
     Decomposition \\[4pt]
     Intentions versus constraints &
     Stated family size near two; achieved fertility lower owing to cost and timing frictions. &
-    GGS; panel studies \citep{sobotka2017,perelliharris2016,bujard2025}. &
+    GGS; panel studies \citep{sobotka2017,beaujouan2019,bujard2025}. &
     Gap documented \\[4pt]
     Policy and institutions &
     Childcare, leave, and transfers raise realised fertility modestly. &
-    Natural experiments \citep{milligan2005,azmat2010,necker2015}. &
+    Natural experiments \citep{milligan2005,azmat2010,stichnoth2015}. &
     Quasi-experimental \\[4pt]
     Development reversal &
     Very high human development associated with slightly higher fertility in selected countries. &
@@ -384,15 +403,15 @@ Female educational expansion and labour-market attachment are central to the opp
 
 \section{Gender equity and the division of labour}
 
-\citet{mcdonald2000} and \citet{goldscheider2015} argue that fertility remains low where gains in public gender equality are not matched by egalitarian domestic roles. The mechanism is straightforward: if women bear disproportionate childcare and housework burdens while participating fully in paid employment, the effective cost of an additional child rises even when public policy formally supports gender equality. Sweden and Denmark combine relatively high female employment with period TFR near 1.7 in recent cross-sections, plausibly supported by subsidised childcare, leave designs that encourage fathers' uptake, and cultural norms around shared parenting \citep{castles2003,luci2013,raute2017}. Norway and Finland register lower period rates in the most recent WDI vintages but are often grouped with the same institutional model in comparative welfare-state research. Southern European and East Asian cases, where female employment has risen but domestic roles remain traditional, are often cited as counterexamples \citep{goldscheider2015,jones2019}. Cross-national patterns motivate the framework; causal claims require evaluation of specific institutional reforms rather than national TFR rankings.
+\citet{mcdonald2000} and \citet{goldscheider2015} argue that fertility remains low where gains in public gender equality are not matched by egalitarian domestic roles. The mechanism is straightforward: if women bear disproportionate childcare and housework burdens while participating fully in paid employment, the effective cost of an additional child rises even when public policy formally supports gender equality. Sweden and Denmark combine relatively high female employment with period TFR near 1.7 in recent cross-sections, plausibly supported by subsidised childcare, leave designs that encourage fathers' uptake, and cultural norms around shared parenting \citep{castles2003,luci2013,raute2019}. Norway and Finland register lower period rates in the most recent WDI vintages but are often grouped with the same institutional model in comparative welfare-state research. Southern European and East Asian cases, where female employment has risen but domestic roles remain traditional, are often cited as counterexamples \citep{goldscheider2015,jones2019}. Cross-national patterns motivate the framework; causal claims require evaluation of specific institutional reforms rather than national TFR rankings.
 
 \section{Partnership formation and childlessness}
 
-Low fertility is inseparable from changing partnership behaviour. Median ages at first marriage and first birth have risen across OECD countries; non-marital cohabitation has become more common but does not fully substitute for marriage as a context for childbearing in all settings \citep{kreyenfeld2012,raybould2021}. Rising permanent childlessness---particularly among highly educated women---contributes to cohort fertility shortfalls even when two-child \emph{ideals} persist at the population level \citep{sobotka2017}. These patterns are documented in longitudinal micro-data; they are correlational with respect to specific drivers (labour markets, housing, mate availability) and should not be read as proof that delaying marriage \emph{caused} fertility to fall independently of cost and preference channels.
+Low fertility is inseparable from changing partnership behaviour. Median ages at first marriage and first birth have risen across OECD countries; non-marital cohabitation has become more common but does not fully substitute for marriage as a context for childbearing in all settings \citep{perelliharris2012,perelliharris2012pd}. Rising permanent childlessness---particularly among highly educated women---contributes to cohort fertility shortfalls even when two-child \emph{ideals} persist at the population level \citep{sobotka2017}. These patterns are documented in longitudinal micro-data; they are correlational with respect to specific drivers (labour markets, housing, mate availability) and should not be read as proof that delaying marriage \emph{caused} fertility to fall independently of cost and preference channels.
 
 \section{Postponement, quantum, and the intentions gap}
 
-A substantial share of post-2000 period fertility decline reflects \emph{tempo}---the timing of births---rather than a reduction in desired family size \citep{bongaarts1998,sobotka2017}. Across Europe and the US, stated ideals cluster near two children while period fertility often lies between 1.3 and 1.7 \citep{perelliharris2016,sobotka2014}. The intentions--outcomes gap is the central descriptive bridge between mechanism discussion and policy evaluation: it documents a preference--realisation wedge (evidence type~3) that pronatalist programmes attempt to close (type~4). Figure~\ref{fig:intentions} compares GGS-II ideals (2020--2023) with period TFR from vital statistics for selected countries.
+A substantial share of post-2000 period fertility decline reflects \emph{tempo}---the timing of births---rather than a reduction in desired family size \citep{bongaarts1998,sobotka2017}. Across Europe and the US, stated ideals cluster near two children while period fertility often lies between 1.3 and 1.7 \citep{beaujouan2019,sobotka2014}. The intentions--outcomes gap is the central descriptive bridge between mechanism discussion and policy evaluation: it documents a preference--realisation wedge (evidence type~3) that pronatalist programmes attempt to close (type~4). Figure~\ref{fig:intentions} compares GGS-II ideals (2020--2023) with period TFR from vital statistics for selected countries.
 
 \begin{figure}[htbp]
   \centering
@@ -404,24 +423,24 @@ A substantial share of post-2000 period fertility decline reflects \emph{tempo}-
   \label{fig:intentions}
 \end{figure}
 
-The gaps in Figure~\ref{fig:intentions}---typically 0.5--1.0 children between stated ideals and period TFR \citep{bujard2025}---are among the most cited descriptive findings in contemporary fertility research because they separate preference levels from realised period fertility. France and the Nordic cases exhibit somewhat narrower gaps than Southern Europe, consistent with---but not proof of---stronger family-policy environments. The pattern is consistent with binding constraints---housing cost, partnership instability, inadequate childcare---though the relative weight of specific barriers remains under-identified \citep{doepke2023}. Panel evidence further shows that intentions predict behaviour imperfectly and that realisation rates differ by parity, partnership status, and country \citep{perelliharris2016}. Survey evidence documents the gap; it does not identify which constraint binds. Chapter~\ref{sec:reversal} turns from diagnosis to intervention: what governments have tried, what theory predicts, and what quasi-experiments estimate.
+The gaps in Figure~\ref{fig:intentions}---typically 0.5--1.0 children between stated ideals and period TFR \citep{bujard2025}---are among the most cited descriptive findings in contemporary fertility research because they separate preference levels from realised period fertility. France and the Nordic cases exhibit somewhat narrower gaps than Southern Europe, consistent with---but not proof of---stronger family-policy environments. The pattern is consistent with binding constraints---housing cost, partnership instability, inadequate childcare---though the relative weight of specific barriers remains under-identified \citep{doepke2023}. Panel evidence further shows that intentions predict behaviour imperfectly and that realisation rates differ by parity, partnership status, and country \citep{beaujouan2019}. Survey evidence documents the gap; it does not identify which constraint binds. Chapter~\ref{sec:reversal} turns from diagnosis to intervention: what governments have tried, what theory predicts, and what quasi-experiments estimate.
 
 \section{Limits of aggregate data}
 
 Cross-country panels with on the order of twenty to thirty observations face severe identification limits: unobserved heterogeneity (culture, migration regimes, welfare state design), simultaneous determination, and too few clusters for reliable inference \citep{myrskyla2009}. Two-country time series exhibit the same constraints with fewer degrees of freedom. Such data are appropriate for documentation and hypothesis generation---as in Chapters~\ref{sec:highincome}--\ref{sec:macro}---but not for attributing fertility decline to GDP, urbanisation, or enrolment rates. The intentions gap and policy evaluation literature reviewed in the next chapter address the question that aggregate data cannot answer alone: whether realised fertility falls short of stated preferences because constraints bind, and whether policy can relax those constraints.
 
 \FloatBarrier
-\chapter{Reversing fertility decline: theories, interventions, and evaluation evidence}
+\chapter[Reversing fertility decline]{Reversing fertility decline: theories, interventions, and evaluation evidence}
 \label{sec:reversal}
 
-Understanding why fertility falls does not automatically tell us whether it can be raised through policy. Low fertility is widely treated as a policy problem---population ageing, pension sustainability, labour-force contraction---but ``fixing'' it requires a separate literature from the mechanisms reviewed in Chapter~\ref{sec:mechanisms} \citep{morgan2003,jones2010,mcdonald2006}. This chapter asks the distinct policy question: if stated ideals exceed realised fertility (Figure~\ref{fig:intentions}), can transfers, childcare, leave, housing, or tax design close the gap? Or are sub-replacement outcomes driven by deep preference change that policy cannot reverse \citep{lesthaeghe2010}? Throughout, the evidence taxonomy from Chapter~1 applies: cross-national TFR rankings are documentation (type~1); credible policy claims require quasi-experimental and meta-analytic evidence (type~4).
+Understanding why fertility falls does not automatically tell us whether it can be raised through policy. Low fertility is widely treated as a policy problem---population ageing, pension sustainability, labour-force contraction---but ``fixing'' it requires a separate literature from the mechanisms reviewed in Chapter~\ref{sec:mechanisms} \citep{morgan2003,mcdonald2006,frejkajones2010}. This chapter asks the distinct policy question: if stated ideals exceed realised fertility (Figure~\ref{fig:intentions}), can transfers, childcare, leave, housing, or tax design close the gap? Or are sub-replacement outcomes driven by deep preference change that policy cannot reverse \citep{lesthaeghe2010}? Throughout, the evidence taxonomy from Chapter~1 applies: cross-national TFR rankings are documentation (type~1); credible policy claims require quasi-experimental and meta-analytic evidence (type~4).
 
 \section{Theoretical approaches to raising fertility}
 
 Three academic frameworks dominate normative and positive discussions of pronatalist policy; each implies different instruments and different expectations of success.
 
 \paragraph{Cost reduction and incentive compatibility.}
-In the Beckerian tradition, fertility rises when the full price of children falls \citep{becker1960,doepke2023}. Policy should therefore lower direct costs (childcare subsidies, housing support, in-kind services) and offset opportunity costs (paid leave, earnings replacement, tax credits that raise net income for parents). The testable prediction is that lump-sum transfers and tax benefits at birth should increase parity-specific birth hazards, especially among price-sensitive groups \citep{milligan2005,cohen2013,whittington1994}. Limits arise when lifetime childrearing costs dwarf transfer size, when incentives are inframarginal for high earners, and when quantity--quality trade-offs lead parents to invest more per child rather than have more children \citep{doepke2023}.
+In the Beckerian tradition, fertility rises when the full price of children falls \citep{becker1960,doepke2023}. Policy should therefore lower direct costs (childcare subsidies, housing support, in-kind services) and offset opportunity costs (paid leave, earnings replacement, tax credits that raise net income for parents). The testable prediction is that lump-sum transfers and tax benefits at birth should increase parity-specific birth hazards, especially among price-sensitive groups \citep{milligan2005,cohen2013,whittington1990}. Limits arise when lifetime childrearing costs dwarf transfer size, when incentives are inframarginal for high earners, and when quantity--quality trade-offs lead parents to invest more per child rather than have more children \citep{doepke2023}.
 
 \paragraph{Gender equity and institutional complementarity.}
 \citet{mcdonald2000} and \citet{mcdonald2006} argue that fertility can recover only where high female human-capital investment is compatible with family formation---that is, where public gender equality (education, labour-market access) is matched by egalitarian domestic roles and social infrastructure (childcare, flexible work). \citet{goldscheider2015} extend this ``gender revolution'' framework: policy must address the \emph{second half} of the revolution (men's domestic participation), not only women's labour-force attachment. The Nordic and French experiences are often interpreted through this lens \citep{castles2003,sobotka2020}, though cross-national correlation does not prove that any single reform caused higher fertility \citep{hoem2008}.
@@ -446,21 +465,21 @@ Governments have deployed a recurring toolkit. Table~\ref{tab:policytools} summa
     \midrule
     Cash transfers and baby bonuses &
     Reduce direct cost of birth; affect parity timing. &
-    Quebec ANC \citep{milligan2005}; US EITC/CTC \citep{cohen2013,whittington1994}; Germany parental allowance \citep{necker2015}. \\[4pt]
+    Quebec ANC \citep{milligan2005}; US EITC/CTC \citep{cohen2013,whittington1990}; Germany parental allowance \citep{stichnoth2015}. \\[4pt]
     Tax relief for families &
     Raise net income of households with children; second-earner relief. &
-    US personal exemption \citep{whittington1994}; Spain joint taxation reform \citep{azmat2010}. \\[4pt]
+    US personal exemption \citep{whittington1990}; Spain joint taxation reform \citep{azmat2010}. \\[4pt]
     Childcare expansion &
     Lower price and time cost of market care; enable employment continuity. &
-    Nordic universal provision \citep{castles2003,sobotka2020}; German expansion post-2007 \citep{necker2015,raute2017}. \\[4pt]
+    Nordic universal provision \citep{castles2003,sobotka2020}; German expansion post-2007 \citep{stichnoth2015,raute2019}. \\[4pt]
     Parental leave &
     Protect earnings and job tenure around birth; gendered design affects uptake. &
-    Sweden, Norway, France \citep{raute2017,olivetti2023}; Australia paid leave \citep{drago2008}. \\[4pt]
+    Sweden, Norway, France \citep{raute2019,olivetti2023}; Australia paid leave \citep{drago2011}. \\[4pt]
     Housing and local benefits &
     Reduce space and cost constraints stressed in intentions research. &
     Singapore, Hungary, Korean packages \citep{jones2019,sobotka2020}; mixed evaluation evidence. \\[4pt]
     Pro-natalist messaging and norm campaigns &
-    Shift perceived social norms \citep{billari2006}. &
+    Shift perceived social norms \citep{kohler2001}. &
     Widespread; weak causal evidence relative to fiscal instruments. \\[4pt]
     Relaxation of anti-natalist policy &
     Remove legal constraints on childbearing. &
@@ -472,13 +491,13 @@ Governments have deployed a recurring toolkit. Table~\ref{tab:policytools} summa
 Table~\ref{tab:policytools} should be read as a menu of levers, not a ranking of effectiveness. Quasi-experimental evidence is strongest for fiscal instruments (rows 1--2) and selected childcare expansions (row 3); norm campaigns (row 6) lack comparable identification. Row 7 captures a distinct logic---removing legal prohibitions---that China's experience shows is necessary but rarely sufficient once low-fertility equilibria have formed.
 
 \paragraph{Northwestern Europe: childcare, leave, and fiscal packages.}
-France and the Nordic countries are the standard reference group for ``family-friendly'' welfare states \citep{castles2003,thevenon2011}. France combines relatively generous cash benefits (\emph{allocations familiales}), subsidised childcare, and leave; period TFR has remained among the highest in Western Europe---near 1.8--1.9 through the late 2010s (\SnapshotYear{}: 1.86) though the most recent harmonised vintages show a partial decline (2023 WDI: 1.66). Sweden and Denmark pair high female employment with subsidised daycare and use-it-or-lose-it leave designs intended to promote gender balance \citep{raute2017}. Cross-national work associates higher family-policy expenditure with higher fertility \citep{kalwij2010,luci2013}, but \citet{hoem2008} cautions that Swedish fertility fluctuated with tempo and cohort timing while policy was relatively stable---implying that policy sets a floor or ceiling rather than fine-tunes year-to-year TFR. The honest summary is correlational success with incomplete causal attribution.
+France and the Nordic countries are the standard reference group for ``family-friendly'' welfare states \citep{castles2003,thevenon2011}. France combines relatively generous cash benefits (\emph{allocations familiales}), subsidised childcare, and leave; period TFR has remained among the highest in Western Europe---near 1.8--1.9 through the late 2010s (\SnapshotYear{}: 1.86) though the most recent harmonised vintages show a partial decline (2023 WDI: 1.66). Sweden and Denmark pair high female employment with subsidised daycare and use-it-or-lose-it leave designs intended to promote gender balance \citep{raute2019}. Cross-national work associates higher family-policy expenditure with higher fertility \citep{kalwij2010,luci2013}, but \citet{hoem2008} cautions that Swedish fertility fluctuated with tempo and cohort timing while policy was relatively stable---implying that policy sets a floor or ceiling rather than fine-tunes year-to-year TFR. The honest summary is correlational success with incomplete causal attribution.
 
 \paragraph{Anglo-sphere and continental reforms.}
-The US and UK rely more on tax credits and means-tested transfers than on universal childcare \citep{cohen2013,thevenon2011}. \citet{milligan2005} and \citet{cohen2013} provide the clearest US/Canada quasi-experimental evidence that fiscal instruments move births, concentrated among lower-income households. Germany expanded childcare and introduced parental benefits after 2007; micro-data studies detect fertility responses among higher-educated women \citep{necker2015,raute2017}, but aggregate TFR rose only from roughly 1.4 in the early 2010s to about 1.6 mid-decade before softening again---illustrating the gap between statistically significant effects and replacement-level recovery. Spain's second-earner tax reform \citep{azmat2010} shows that instrument design matters: incentives targeted at joint taxation can affect both fertility and female participation, complicating welfare interpretation.
+The US and UK rely more on tax credits and means-tested transfers than on universal childcare \citep{cohen2013,thevenon2011}. \citet{milligan2005} and \citet{cohen2013} provide the clearest US/Canada quasi-experimental evidence that fiscal instruments move births, concentrated among lower-income households. Germany expanded childcare and introduced parental benefits after 2007; micro-data studies detect fertility responses among higher-educated women \citep{stichnoth2015,raute2019}, but aggregate TFR rose only from roughly 1.4 in the early 2010s to about 1.6 mid-decade before softening again---illustrating the gap between statistically significant effects and replacement-level recovery. Spain's second-earner tax reform \citep{azmat2010} shows that instrument design matters: incentives targeted at joint taxation can affect both fertility and female participation, complicating welfare interpretation.
 
 \paragraph{East Asia: aggressive packages, limited aggregate results.}
-Japan, Korea, and Singapore have expanded childcare, housing subsidies, and direct payments as TFR fell to historic lows \citep{jones2019,jones2010}. Korea's TFR (0.92 in Table~\ref{tab:countries}; lower in more recent WDI vintages) persists near the bottom of global rankings despite repeated pronatalist announcements---a cautionary case that fiscal and service expansion without labour-market restructuring, gender-equity progress, and housing affordability may deliver minimal aggregate change \citep{goldscheider2015,jones2019}. Japan shows modest tempo recovery at some parities but not sustained return to replacement \citep{frejka2017}. East Asia underscores that ``attempting reversal'' is documented; ``achieving reversal'' is not.
+Japan, Korea, and Singapore have expanded childcare, housing subsidies, and direct payments as TFR fell to historic lows \citep{jones2019,frejkajones2010}. Korea's TFR (0.92 in Table~\ref{tab:countries}; lower in more recent WDI vintages) persists near the bottom of global rankings despite repeated pronatalist announcements---a cautionary case that fiscal and service expansion without labour-market restructuring, gender-equity progress, and housing affordability may deliver minimal aggregate change \citep{goldscheider2015,jones2019}. Japan shows modest tempo recovery at some parities but not sustained return to replacement \citep{frejka2017}. East Asia underscores that ``attempting reversal'' is documented; ``achieving reversal'' is not.
 
 \paragraph{Israel, pronatalism, and compositional limits.}
 Israel operates explicit pronatalist transfers and subsidised childcare alongside strong normative encouragement of large families \citep{okun2013}. National TFR above replacement is real in aggregate statistics but, as Figures~\ref{fig:contrast} and~\ref{fig:israel_groups} show, driven disproportionately by religious sub-populations with distinct preferences and institutions. Secular Israeli fertility resembles other OECD cases. Policy evaluation here must be sub-group specific; aggregate TFR is a poor outcome for testing secular pronatalist effectiveness.
@@ -501,15 +520,15 @@ Figure~\ref{fig:policy} juxtaposes two published benchmarks on \emph{different} 
   \label{fig:policy}
 \end{figure}
 
-Figure~\ref{fig:policy} should be read as a magnitude guide, not a pooled estimate. \citet{milligan2005} remains a canonical quasi-experimental result: a clearly specified cash transfer raises first-birth hazards by economically meaningful magnitudes. \citet{cohen2013} and \citet{whittington1994} corroborate fiscal channels in US data. \citet{azmat2010} and \citet{necker2015} demonstrate heterogeneous effects by education, income, and parity. Meta-reviews \citep{luci2013,gauthier2007,thevenon2011} converge on order-of-magnitude TFR impacts of roughly 0.1--0.3 from \emph{combined} packages---consistent with the right-hand panel of Figure~\ref{fig:policy}; \citet{sobotka2020} synthesises country-level policy experience against the same modest scale. \citet{doepke2023} and \citet{olivetti2023} survey dynamic models and lifecycle evidence; simulated and estimated effects rarely exceed a few tenths of a child without assumptions that multiple constraints bind simultaneously and are jointly relaxed.
+Figure~\ref{fig:policy} should be read as a magnitude guide, not a pooled estimate. \citet{milligan2005} remains a canonical quasi-experimental result: a clearly specified cash transfer raises first-birth hazards by economically meaningful magnitudes. \citet{cohen2013} and \citet{whittington1990} corroborate fiscal channels in US data. \citet{azmat2010} and \citet{stichnoth2015} demonstrate heterogeneous effects by education, income, and parity. Meta-reviews \citep{luci2013,gauthier2007,thevenon2011} converge on order-of-magnitude TFR impacts of roughly 0.1--0.3 from \emph{combined} packages---consistent with the right-hand panel of Figure~\ref{fig:policy}; \citet{sobotka2020} synthesises country-level policy experience against the same modest scale. \citet{doepke2023} and \citet{olivetti2023} survey dynamic models and lifecycle evidence; simulated and estimated effects rarely exceed a few tenths of a child without assumptions that multiple constraints bind simultaneously and are jointly relaxed.
 
-Several findings recur across high-quality studies. \emph{First}, effects are strongest at intensive margins (timing of first and second birth) rather than inducing large increases in higher-order births \citep{milligan2005,necker2015}. \emph{Second}, childcare expansion affects fertility partly through labour-supply and earnings channels, not only through price reduction \citep{raute2017,olivetti2023}. \emph{Third}, tempo adjustments can inflate short-run period TFR responses that do not translate into higher completed cohort fertility \citep{bongaarts1998,sobotka2017,hoem2008}. \emph{Fourth}, policies that succeed on fertility may trade off against gender equality unless leave and childcare are designed carefully \citep{raute2017,goldscheider2015}.
+Several findings recur across high-quality studies. \emph{First}, effects are strongest at intensive margins (timing of first and second birth) rather than inducing large increases in higher-order births \citep{milligan2005,stichnoth2015}. \emph{Second}, childcare expansion affects fertility partly through labour-supply and earnings channels, not only through price reduction \citep{raute2019,olivetti2023}. \emph{Third}, tempo adjustments can inflate short-run period TFR responses that do not translate into higher completed cohort fertility \citep{bongaarts1998,sobotka2017,hoem2008}. \emph{Fourth}, policies that succeed on fertility may trade off against gender equality unless leave and childcare are designed carefully \citep{raute2019,goldscheider2015}.
 
-\section{Why reversal attempts often fall short of ``fixing'' the problem}
+\section[Why reversal attempts fall short]{Why reversal attempts often fall short of ``fixing'' the problem}
 
 Academic scepticism is as important as policy ambition. \citet{morgan2003} questions whether sub-replacement fertility constitutes a crisis solvable by marginal transfers, noting that much decline reflects desired postponement and legitimate preference change. \citet{lesthaeghe2010} treats low fertility as an equilibrium of the second demographic transition rather than a market failure correctable by subsidies alone. \citet{kohler2002} and \citet{jones2019} emphasise path dependence: once ultra-low fertility norms, labour markets, and housing equilibria consolidate---as in East Asia---the same instruments that have correlated with TFR near 1.7--1.9 in selected Northwestern European cases may fail to move Korea or Japan toward replacement.
 
-The policy literature therefore supports a restrained conclusion aligned with this report's evidence taxonomy. Quasi-experiments establish that \emph{specific} reforms can raise birth probabilities and, in combination, may add a few tenths to period TFR \citep{sobotka2020,milligan2005}. They do not establish that pronatalism can restore replacement fertility in every institutional context, reverse ultra-low equilibria by cash alone, or substitute for broader reforms to childcare affordability, housing, partnership formation, and workplace flexibility \citep{doepke2023,mcdonald2006}. Where the intentions--outcomes gap reflects binding constraints, policy must address those constraints directly; where it reflects changing ideals, transfer programmes may have little purchase \citep{perelliharris2016,bujard2025}. Distinguishing these cases empirically remains the central unfinished task for applied fertility research.
+The policy literature therefore supports a restrained conclusion aligned with this report's evidence taxonomy. Quasi-experiments establish that \emph{specific} reforms can raise birth probabilities and, in combination, may add a few tenths to period TFR \citep{sobotka2020,milligan2005}. They do not establish that pronatalism can restore replacement fertility in every institutional context, reverse ultra-low equilibria by cash alone, or substitute for broader reforms to childcare affordability, housing, partnership formation, and workplace flexibility \citep{doepke2023,mcdonald2006}. Where the intentions--outcomes gap reflects binding constraints, policy must address those constraints directly; where it reflects changing ideals, transfer programmes may have little purchase \citep{beaujouan2019,bujard2025}. Distinguishing these cases empirically remains the central unfinished task for applied fertility research.
 
 Having mapped why fertility falls (Chapter~\ref{sec:mechanisms}) and what has been tried to raise it (Chapter~\ref{sec:reversal}), the next chapter states explicitly which data sources and identification designs the field relies on.
 
@@ -530,7 +549,7 @@ The descriptive figures in this report draw primarily on harmonised macro data; 
 
 \section{Identification strategies---and what is not identification}
 
-Strict causal claims require a comparison between what occurred and a well-defined counterfactual. In fertility research, this standard is met primarily by randomized or quasi-randomized policy evaluation and credible instrumental-variable designs \citep{doepke2023}. The pronatalist literature reviewed in Chapter~\ref{sec:reversal} depends on this standard: cross-country TFR rankings cannot validate policy, but difference-in-differences around reforms can estimate local average treatment effects \citep{milligan2005,azmat2010,necker2015}. Tempo--quantum decomposition \citep{bongaarts1998} describes \emph{how much} of a TFR change reflects timing versus completed family size; it does not identify drivers. Fertility-intention surveys document stated preferences and the gap to realised fertility; they do not establish which barrier---cost, housing, childcare, partnership---causes the gap. Correlational micro-data face selection bias. The appropriate design depends on the question: benefit reforms for the effect of transfers; age-specific rates for postponement; surveys for descriptive gaps only.
+Strict causal claims require a comparison between what occurred and a well-defined counterfactual. In fertility research, this standard is met primarily by randomized or quasi-randomized policy evaluation and credible instrumental-variable designs \citep{doepke2023}. The pronatalist literature reviewed in Chapter~\ref{sec:reversal} depends on this standard: cross-country TFR rankings cannot validate policy, but difference-in-differences around reforms can estimate local average treatment effects \citep{milligan2005,azmat2010,stichnoth2015}. Tempo--quantum decomposition \citep{bongaarts1998} describes \emph{how much} of a TFR change reflects timing versus completed family size; it does not identify drivers. Fertility-intention surveys document stated preferences and the gap to realised fertility; they do not establish which barrier---cost, housing, childcare, partnership---causes the gap. Correlational micro-data face selection bias. The appropriate design depends on the question: benefit reforms for the effect of transfers; age-specific rates for postponement; surveys for descriptive gaps only.
 
 \section{Replication and limitations of WDI}
 
@@ -546,7 +565,7 @@ This final chapter summarises what the evidence supports, what remains uncertain
 
 \section{Open questions}
 \label{sec:open}
-Several gaps remain salient for future work. \emph{First}, the decomposition of the intentions--outcomes gap (Figure~\ref{fig:intentions}) into specific binding constraints---housing, childcare cost, partnership formation, labour-market inflexibility---requires linked administrative and survey data with exogenous policy variation, not cross-sectional ideals alone \citep{doepke2023}. \emph{Second}, cohort completed fertility for women born after 1980 is still emerging; whether ultra-low period TFR in East Asia translates into sub-replacement completed fertility at scale remains a first-order demographic question \citep{kohler2002,sobotka2017}. \emph{Third}, compositional heterogeneity within countries (religiosity, education, migration background) increasingly dominates national aggregates; aggregate TFR may obscure offsetting sub-population trends, as Figure~\ref{fig:israel_groups} demonstrates \citep{okun2013}. \emph{Fourth}, external validity of quasi-experimental estimates from one policy reform to full pronatalist packages is uncertain: effect sizes in Figure~\ref{fig:policy} are modest, contexts differ, and general equilibrium responses (labour supply, fiscal cost) are rarely estimated \citep{sobotka2020,morgan2003}. \emph{Fifth}, the East Asian experience (Chapter~\ref{sec:reversal}) demands better theory and evidence on why large-scale pronatalist spending has not reversed ultra-low fertility \citep{jones2019}, and whether policy timing relative to the demographic transition determines effectiveness \citep{klusener2016,hoem2008}.
+Several gaps remain salient for future work. \emph{First}, the decomposition of the intentions--outcomes gap (Figure~\ref{fig:intentions}) into specific binding constraints---housing, childcare cost, partnership formation, labour-market inflexibility---requires linked administrative and survey data with exogenous policy variation, not cross-sectional ideals alone \citep{doepke2023}. \emph{Second}, cohort completed fertility for women born after 1980 is still emerging; whether ultra-low period TFR in East Asia translates into sub-replacement completed fertility at scale remains a first-order demographic question \citep{kohler2002,sobotka2017}. \emph{Third}, compositional heterogeneity within countries (religiosity, education, migration background) increasingly dominates national aggregates; aggregate TFR may obscure offsetting sub-population trends, as Figure~\ref{fig:israel_groups} demonstrates \citep{okun2013}. \emph{Fourth}, external validity of quasi-experimental estimates from one policy reform to full pronatalist packages is uncertain: effect sizes in Figure~\ref{fig:policy} are modest, contexts differ, and general equilibrium responses (labour supply, fiscal cost) are rarely estimated \citep{sobotka2020,morgan2003}. \emph{Fifth}, the East Asian experience (Chapter~\ref{sec:reversal}) demands better theory and evidence on why large-scale pronatalist spending has not reversed ultra-low fertility \citep{jones2019}, and whether policy timing relative to the demographic transition determines effectiveness \citep{klusener2013,hoem2008}.
 
 \section{Conclusion}
 Period fertility has fallen far below replacement across most high-income countries and is declining---at varying speed---through much of Asia, MENA, and Sub-Saharan Africa. US and UK trajectories (Figures~\ref{fig:timeline}--\ref{fig:decades}) exemplify the high-income pattern; regional panels (Figures~\ref{fig:regional_snapshot}--\ref{fig:regional_traj}) situate that pattern within a heterogeneous global transition. Israel demonstrates that national aggregates can mask opposing sub-population behaviours; compositional analysis is not optional where demographic heterogeneity is large.

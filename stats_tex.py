@@ -56,10 +56,10 @@ def write_latex_country_table(
         rows.append(f"    {name} & {tfr:.2f} \\\\")
 
     body = "\n".join(rows)
-    table = f"""\\begin{{table}}[H]
-  \\centering
-  \\caption{{Total fertility rate by country (year~{actual_year}). {caption_note}}}
+    table = f"""\\begin{{center}}
+  \\captionof{{table}}{{Total fertility rate by country (year~{actual_year}). {caption_note}}}
   \\label{{tab:countries}}
+  \\vspace{{0.4em}}
   \\small
   \\begin{{tabular}}{{lr}}
     \\toprule
@@ -68,7 +68,7 @@ def write_latex_country_table(
 {body}
     \\bottomrule
   \\end{{tabular}}
-\\end{{table}}
+\\end{{center}}
 """
     (paper_dir / "table_countries.tex").write_text(table, encoding="utf-8")
     return actual_year

@@ -48,6 +48,22 @@ plt.rcParams.update(
 
 PALETTE = sns.color_palette("colorblind", n_colors=12)
 
+# Fixed order and colours: US always blue (0), UK always orange (1)
+TIMESERIES_COUNTRY_ORDER = ["USA", "GBR"]
+COUNTRY_COLORS: dict[str, tuple] = {
+    "USA": PALETTE[0],
+    "GBR": PALETTE[1],
+    "ISR": PALETTE[2],
+}
+
+
+def _ordered_country_codes(country_codes: list[str] | pd.Index) -> list[str]:
+    """Return country codes in a stable display order."""
+    available = set(country_codes)
+    ordered = [cc for cc in TIMESERIES_COUNTRY_ORDER if cc in available]
+    ordered.extend(cc for cc in country_codes if cc not in ordered)
+    return ordered
+
 # Variables to test cross-country (not pre-judged as "drivers")
 CROSS_COUNTRY_CODES = [
     "SE.TER.ENRR.FE",
@@ -84,15 +100,16 @@ def plot_tfr_levels(
     ylim: tuple[float, float] = (1.0, 4.0),
 ) -> None:
     """TFR time series — no annotations, no phase shading."""
+    country_codes = _ordered_country_codes(country_codes)
     fig, ax = plt.subplots(figsize=(8.5, 4.8))
 
-    for i, cc in enumerate(country_codes):
+    for cc in country_codes:
         sub = _country_subset(wide, cc)
         ax.plot(
             sub["year"],
             sub[OUTCOME_CODE],
             label=_country_label(cc, country_names),
-            color=PALETTE[i],
+            color=COUNTRY_COLORS.get(cc, PALETTE[0]),
             linewidth=2.2,
         )
 
@@ -114,12 +131,13 @@ def plot_correlates_timeseries(
     output_path: Path,
 ) -> None:
     """Time series of selected correlates — explicitly not labelled as causes."""
+    country_codes = _ordered_country_codes(country_codes)
     fig, axes = plt.subplots(2, 2, figsize=(9, 6.5), sharex=True)
     axes = axes.flatten()
 
     for ax, code in zip(axes, CROSS_COUNTRY_CODES):
         spec = INDICATORS[code]
-        for j, cc in enumerate(country_codes):
+        for cc in country_codes:
             sub = _country_subset(wide, cc)
             if code not in sub.columns:
                 continue
@@ -130,7 +148,7 @@ def plot_correlates_timeseries(
                 series["year"],
                 series[code],
                 label=COUNTRIES.get(cc, cc),
-                color=PALETTE[j],
+                color=COUNTRY_COLORS.get(cc, PALETTE[0]),
                 linewidth=1.8,
             )
         ax.set_title(spec.short_label, fontweight="bold", fontsize=10)
@@ -139,10 +157,9 @@ def plot_correlates_timeseries(
         ax.grid(axis="y", alpha=0.25, linewidth=0.5)
 
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.5, -0.02))
-    fig.supxlabel("Year")
-    fig.suptitle("Selected correlates (time series, native units)", fontweight="bold", y=1.02)
-    fig.tight_layout()
+    fig.legend(handles, labels, loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 0.02))
+    fig.suptitle("Selected correlates (time series, native units)", fontweight="bold", y=0.98)
+    fig.tight_layout(rect=(0, 0.06, 1, 0.96))
     _save(fig, output_path)
 
 
@@ -197,6 +214,7 @@ def plot_tfr_decades(
     Smooths year-to-year noise so a lay reader can see the direction of change
     at a glance. Standard descriptive device in demographic briefs.
     """
+    country_codes = _ordered_country_codes(country_codes)
     records: list[dict] = []
     for cc in country_codes:
         sub = _country_subset(wide, cc)
@@ -221,7 +239,7 @@ def plot_tfr_decades(
         name = COUNTRIES.get(cc, cc)
         sub = df.loc[df["country"] == name].set_index("decade").reindex(decades)
         offset = (i - 0.5) * width
-        bars = ax.bar(x + offset, sub["tfr"], width, label=name, color=PALETTE[i], alpha=0.9)
+        bars = ax.bar(x + offset, sub["tfr"], width, label=name, color=COUNTRY_COLORS.get(cc, PALETTE[i]), alpha=0.9)
         # Label the most recent bar only — avoids clutter
         last = sub["tfr"].iloc[-1]
         if pd.notna(last):
@@ -266,6 +284,7 @@ def plot_small_multiples(
     output_path: Path,
 ) -> None:
     """Appendix figure — full indicator set in native units."""
+    country_codes = _ordered_country_codes(country_codes)
     codes = list(INDICATORS.keys())
     ncols = 3
     nrows = int(np.ceil(len(codes) / ncols))
@@ -276,7 +295,7 @@ def plot_small_multiples(
     for ax, code in zip(axes, codes):
         spec = INDICATORS[code]
         has_data = False
-        for j, cc in enumerate(country_codes):
+        for cc in country_codes:
             sub = _country_subset(wide, cc)
             if code not in sub.columns:
                 continue
@@ -288,7 +307,7 @@ def plot_small_multiples(
                 series["year"],
                 series[code],
                 label=COUNTRIES.get(cc, cc),
-                color=PALETTE[j],
+                color=COUNTRY_COLORS.get(cc, PALETTE[0]),
                 linewidth=1.6,
             )
         if not has_data:
@@ -307,18 +326,9 @@ def plot_small_multiples(
 
     handles, labels = axes[0].get_legend_handles_labels()
     if handles:
-        fig.legend(handles, labels, loc="lower center", ncol=2, frameon=False, bbox_to_anchor=(0.5, -0.01))
-    fig.supxlabel("Year")
-    fig.suptitle("All indicators over time (native units)", fontweight="bold", y=1.01)
-    fig.text(
-        0.5,
-        -0.02,
-        "Each panel has its own y-axis. Blue = United States, Orange = United Kingdom.",
-        ha="center",
-        fontsize=8,
-        color="0.35",
-    )
-    fig.tight_layout()
+        fig.legend(handles, labels, loc="upper center", ncol=2, frameon=False, bbox_to_anchor=(0.5, 0.02))
+    fig.suptitle("All indicators over time (native units)", fontweight="bold", y=0.98)
+    fig.tight_layout(rect=(0, 0.05, 1, 0.96))
     _save(fig, output_path)
 
 
@@ -340,7 +350,7 @@ def generate_paper_figures(
 ) -> None:
     """Figures for the LaTeX paper (PDF + PNG)."""
     paper_dir = paper_dir or Path(PAPER_FIGURES_DIR)
-    ts_countries = list(wide_ts["country_code"].unique())
+    ts_countries = _ordered_country_codes(wide_ts["country_code"].unique())
 
     plot_tfr_levels(wide_ts, ts_countries, paper_dir / "fig1_tfr_timeline")
     plot_tfr_decades(wide_ts, ts_countries, paper_dir / "fig2_tfr_decades")

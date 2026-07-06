@@ -43,7 +43,7 @@ def plot_regional_tfr_snapshot(
     regions = list(REGIONAL_SAMPLES.keys())
     n_regions = len(regions)
 
-    fig, axes = plt.subplots(n_regions, 1, figsize=(9, 3.2 * n_regions), sharex=False)
+    fig, axes = plt.subplots(n_regions, 1, figsize=(10.5, 4.4 * n_regions), sharex=False)
     axes = np.atleast_1d(axes)
 
     for ax, region in zip(axes, regions):
@@ -58,7 +58,7 @@ def plot_regional_tfr_snapshot(
             PALETTE[0] if cc in REGIONAL_HIGHLIGHTS else "0.78"
             for cc in df["country_code"]
         ]
-        ax.barh(df["country_name"], df[OUTCOME_CODE], color=colors, edgecolor="0.3", linewidth=0.35)
+        ax.barh(df["country_name"], df[OUTCOME_CODE], height=0.72, color=colors, edgecolor="0.3", linewidth=0.35)
         ax.axvline(REPLACEMENT_TFR, color="0.3", linestyle="--", linewidth=1.0)
 
         for _, row in df.iterrows():
@@ -67,23 +67,25 @@ def plot_regional_tfr_snapshot(
                 row["country_name"],
                 f"{row[OUTCOME_CODE]:.2f}",
                 va="center",
-                fontsize=7.5,
+                fontsize=9,
             )
 
-        ax.set_title(_region_title(region), fontweight="bold", fontsize=10, loc="left")
-        ax.set_xlabel("TFR (births per woman)")
+        ax.set_title(_region_title(region), fontweight="bold", fontsize=11, loc="left", pad=8)
+        ax.set_xlabel("TFR (births per woman)", fontsize=10)
         ax.set_xlim(0, max(df[OUTCOME_CODE].max() + 0.5, 2.5))
+        ax.tick_params(axis="y", labelsize=9.5)
+        ax.tick_params(axis="x", labelsize=9)
         ax.grid(axis="x", alpha=0.25, linewidth=0.5)
 
-    fig.suptitle(f"Total fertility rate by country ({actual_year})", fontweight="bold", y=1.01)
+    fig.suptitle(f"Total fertility rate by country ({actual_year})", fontweight="bold", fontsize=12, y=0.995)
     fig.text(
         0.01,
-        -0.01,
+        0.002,
         "Highlighted bars: major illustrative cases. Dashed line: replacement (2.1). Source: World Bank WDI.",
-        fontsize=8,
+        fontsize=8.5,
         color="0.35",
     )
-    fig.tight_layout()
+    fig.subplots_adjust(hspace=0.38, top=0.96, bottom=0.04)
     _save(fig, output_path)
     return actual_year
 
